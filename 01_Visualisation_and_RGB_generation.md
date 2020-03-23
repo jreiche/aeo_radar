@@ -149,3 +149,6 @@ __Question 3b:__ Which colours represent the five main land cover classes in the
 
 __Question 3c:__ Why are plantations much greener in the RGB than regular forest?
 
+## Analysing and describing class specific backscatter characteristics
+Analysing and describing the SAR backscatter is fundamental to build the link between the observed SAR backscatter values and the objects on the ground (trees, river ...). This will assist to answer the following type of questions: How did the differently polarised radar (VV vs. VH) waves interact with the objects on the ground to result in the observed VV and VH backscatter values? Which scatter mechanisms (surface, volume and/or double bounce scattering) did cause for example high VH values over forest? 
+First, the backscatter characteristics of the five main classes are to be analysed and described: forest (F), non-forest (NF), plantation (P), built-up (B) and water (W). This is to be done individually for VV, VH and “VVVH backscatter ratio”. 
