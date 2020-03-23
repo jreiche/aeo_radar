@@ -64,9 +64,9 @@ To start working in GEE you first need to sign up, if you have not done so befor
 
 After signing up to GEE you are ready to login and analyse satellite data via the GEE code editor (Please watch the videos mentioned above to understand the structure of the GEE code editor). 
 
-# Google Earth Engine Exercises
+# 3. Google Earth Engine Exercises
 Please click on the different _.md_ files of the pratical and follow the instructions and tasks within them. It is important to carry out the different parts in the intended order of:
 
-3.1 Sentinel-1 visualisation and RGB generation
-3.2 Sentinel-1 multitemporal RGB generation
-3.3 Sentinel-1 time series analysis
+3.1. Sentinel-1 visualisation and RGB generation
+3.2. Sentinel-1 multitemporal RGB generation
+3.3. Sentinel-1 time series analysis
