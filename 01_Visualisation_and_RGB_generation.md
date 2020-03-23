@@ -46,4 +46,41 @@ __Question 1b:__ How many Images are in this Collection?
 
 __Question 1c:__ How many Images of this collection were acquired in March 2020?
 
+The visualisation of images is only possible for objects of the class _Image_ in GEE. Therefore we select the first Image of the _ImageCollection_.
+
+```java
+// Obtain the first image from the Sentinel-1 collection (acquired at February 1st, 2020)
+var s1_image = s1_collection.first();
+```
+Take a look at the single Image and print it in the console. The metadata of the image is printed in the console.
+
+```java
+// Print this image to the console
+print('First Sentinel-1 image from collection: ', s1_image)
+```
+
+To visualize a VV-polarized Sentinel-1 image as a grayscale, we first subset to the VV-band of this Sentinel-1 image. After that we visualize the band.
+
+```java
+var s1VV_image = s1_image.select('VV');
+
+Map.addLayer(s1VV_image, {min: -25, max: 0, palette: ['black', 'white']}, 'Sentinel-1 VV image', false);
+```
+
+Examine the printed Sentinel-1 VV image (Fig. 5). To get a better idea of the study area, you may also deselect the visualized layer (purple box in Fig. 5) and change the basemap to an optical satellite imagery – “Satellite” (orange box in Fig. 5). 
+
+The five main classes present in the study area are: __forest (F)__, __non-forest (NF)__, __plantation (P)__, __built-up (B)__ and __water (W)__. Here non-forest is predominantly open soil (logging roads or logged forest/plantation). 
+
+![fig](/figure_05.png)
+<sub>Figure 5. Sentinel-1 VV image for February 1st, 2020. </sub>
+
+###Task
+Now try to select the VH band of “s1_image” yourself and visualize it similar to the VV-image.
+(Hint: Do it similar to the VV-polarization and fill out spaces of __???__ yourself - see below)
+
+```java
+var s1VH_image = ??? ;
+
+Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', false);
+```
 
