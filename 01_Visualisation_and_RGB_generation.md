@@ -2,7 +2,6 @@
 ## Visualisation
 ### !!!! Important !!!!
 For the entire practical you need to copy and paste all parts of the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully run the code.
-### !!!! Important !!!!
 
 To start analysing Satellite Imagery in GEE you first have to sign up and login into GEE code editor. Once you have done that we can start by selecting an Area of Interest (aoi) and zooming to it.
 
@@ -33,4 +32,16 @@ var s1_collection = ee.ImageCollection('COPERNICUS/S1_GRD')
 ```
 
 To get a better understanding of GEE and the data structure look at the ImageCollection “Entire collection of Sentinel-1 images”. This ImageCollection should be printed in the console on the top right after running the script (Fig. 4).
+
+```java
+// Print the image collection to the console
+print('Entire collection of Sentinel-1 images: ', s1_collection);
+```
+![fig](/figure_04.png)
+<sub>Figure 4. Sentinel-1 ImageCollection in the console of GEE. </sub>
+
+__Question 1a:__ How is the ImageCollection arranged and what does it contain? 
+__Question 1b:__ How many Images are in this Collection?
+__Question 1c:__ How many Images of this collection were acquired in March 2020?
+
 
