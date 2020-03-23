@@ -92,7 +92,13 @@ In order to check the visual parameters (what band is the red channel, etc) you 
 <sub>Figure 10. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization. </sub>
 
 ### Question
-__Question 4a__
+__Question 4a:__ What areas show the most change and why is that? What main class is showing the most change?
 
+__Question 4b:__ What do the different colours of the map show us (e.g. What do blue, red and yellow patches indicate?)? 
 
+__Question 4c:__ Why are some areas of the shore in a different colour?
 
+### Task
+Create the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VH polarization. Follow the code above and change if necessary parts to select the VH polarization.
+
+__Question 4d:__ How does the RGB change if you calculate it for the VH-polarization instead of the VV?  Why are these areas different?
