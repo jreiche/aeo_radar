@@ -17,3 +17,20 @@ var aoi = ee.Geometry.Polygon(
 // Zoom to this area of of interest
 Map.centerObject(aoi);
 ```
+In order to access the Sentinel-1 data in GEE you need to search the GEE catalogue of provided data and filter based on the desired aoi and date. Therefore you need to define a start and end date and several sensor metadata properties (eg: Instrument mode, orbit pass, etc.).
+
+```java
+// Define a start and end date for the analysis
+var start_monitoring = ee.Date('2020-02-01');
+var end_monitoring = ee.Date('2020-03-15');
+
+// Get a collection of Sentinel-1 images in the area of interest and apply some filters
+var s1_collection = ee.ImageCollection('COPERNICUS/S1_GRD')
+  .filter(ee.Filter.eq('instrumentMode', 'IW'))
+  .filter(ee.Filter.eq('orbitProperties_pass', 'DESCENDING'))
+  .filterDate(ee.Date(start_monitoring), ee.Date(end_monitoring))
+  .filterBounds(aoi);
+```
+
+To get a better understanding of GEE and the data structure look at the ImageCollection “Entire collection of Sentinel-1 images”. This ImageCollection should be printed in the console on the top right after running the script (Fig. 4).
+
