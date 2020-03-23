@@ -60,6 +60,8 @@ After signing up to GEE you are ready to login and analyse satellite data via th
 
 Please click on the different _.md_ files of the pratical and follow the instructions and tasks within them. It is important to carry out the different parts in the intended order of:
 
-
+1. Visualisation and RGB generation
+2. Multitemporal RGB generation
+3. Time series analysis
 
 
