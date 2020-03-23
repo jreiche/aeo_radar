@@ -6,5 +6,8 @@ Johannes Reiche, Bart Slagter & Johannes Balling
 
 
 ### Requirements
+* Software
+  * Google Earth Engine (GEE)
+* Dataset provided via GEE
+  * Sentinel-1
 
-AEO GEE radar exercise
