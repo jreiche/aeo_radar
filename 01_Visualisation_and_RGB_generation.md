@@ -84,4 +84,68 @@ var s1VH_image = ??? ;
 
 Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', false);
 ```
+For a better understanding of the backscatter values for the five main classes you might check their specific values, by selecting the “_Inspector_” on the top right and then select a point with the mouse courser by clicking on the maps (Fig. 6).
+
+![fig](/figure_06.png)
+<sub>Figure 6. Inspector function to access values of plotted maps in GEE. </sub>
+
+To describe a class specific backscatter characteristic, extract backscatter values for 10 pixels of homogeneous areas representing each of the five land cover classes via the GEE “_Inspector_”. Afterwards calculate the minimal value, the maximal value, the median and the standard deviation based on the 10 pixel for each class and fill it in a table (Example table 2.).
+
+![fig](/table_02.png)
+<sub> Table 2. Sentinel-1 image modes at medium spatial resolution. VV - vertical transmit and vertical receive polarisation; VH - vertical transmit and horizontal receive polarisation. </sub>
+
+### Question
+__Question 2a:__ What differences do you see between the maps of the two polarizations?
+
+__Question 2b:__ Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)? 
+
+__Question 2c:__ What are significant differences in the calculated median and standard deviation values for VV- and VH-polarization of each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
+
+__Question 2d:__ Assign for each of the five main classes the range of backscatter values that you examine with the help of the GEE Inspector.
+
+## Calculating “VVVH backscatter ratio” and RGB composite creation
+
+To create a false colour RGB using a dual-polarised SAR image (two image layers only), the backscatter ratio is most commonly used as third image layer. In case of Sentinel-1, the “VVVH backscatter ratio” is calculated.
+In dB scale, the “VVVH backscatter ratio” is not calculated as a classical ratio (for example NDVI), but simply as VV backscatter - VH backscatter. (In linear scale, the “VVVH backscatter ratio” it is calculated as ratio: VV/VH).
+
+To calculate the “VVVH backscatter ratio” and visualize it (Fig. 7) you may use the following code. 
+__Note__ that in order to successfully run this code you need to have defined the variable called _s1VH_image_ via the task from visualizing the VH band from before!
+
+```java
+// Calculate the  VVVH backscatter ratio by subtracting the single bands of VV and VH
+var s1VVVH_image = (s1VV_image.subtract(s1VH_image)).rename('VVVH');
+
+Map.addLayer(s1VVVH_image, {min: 0, max: 10, palette: ['black', 'white']}, 'Sentinel-1 VVVH image', false);
+```
+
+![fig](/figure_07.png)
+<sub> Figure 7. VVVH backscatter ratio as grayscale for one Sentinel-1 image </sub>
+
+For plotting a radar RGB in GEE we first need to add the newly calculated backscatter ratio to the initial Sentinel-1 image containing the VV- and VH-bands. Out of convenience we also clip the image to the desired aoi.
+
+```java
+// Add the backscatter ratio to the initial Sentinel-1 image
+var s1_image = s1_image.addBands(s1VVVH_image);
+
+// Clip the Sentinel-1 image
+var s1_image_clip = s1_image.clip(aoi)
+
+// Add the Sentinel-1 image to the map as an RGB image, using the three bands VV, VH and VV/VH
+var visualisation_params = {
+        "opacity": 1,
+        "bands": ["VV","VH","VVVH"],
+        "min": [-25,-30,0],
+        "max": [-5,-10,10],
+        "gamma": [1,1,1]
+};
+
+Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', false)
+```
+
+### Question
+__Question 3a:__ What differences do you see in the ratio band compared to the single VV and VH bands and which classes are visually especially good separately?
+
+__Question 3b:__ Which colours represent the five main land cover classes in the RGB and why?
+
+__Question 3c:__ Why are plantations much greener in the RGB than regular forest?
 
