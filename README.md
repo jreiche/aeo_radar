@@ -56,6 +56,9 @@ To start working in GEE you first need to sign up, if you have not done so befor
 ![fig](/figure_03.png)
 <sub>Figure 3. GEE website - for using GEE, please sign-up on the top right (red box). </sub>
 
+After signing up to GEE you are ready to login and analyse satellite data via the GEE code editor (Please watch the videos mentioned above to understand the structure of the GEE code editor). 
+
+Please click on the different _.md_ files of the pratical and follow the instructions and tasks within them. It is important to carry out the different parts in the intended order of:
 
 
 
