@@ -30,3 +30,8 @@ The study area is located in the province of Riau (Indonesia). Riau is located o
 
 ![fig](/figure_01.png)
 <sub>Figure 1. Forest conversion and oil palm plantation in Riau (Indonesia) </sub>
+
+The study area extends approximately 80 x 60 km (0°24’ N; 102°40’ E) and is part of the Pelalawan regency with several plantations and peatlands. The later are diminishing in their quantity due to drainage for land conversion and make them more sensible to fires. Although forbidden by law, fire use for forest removal is still wide-spread in Riau (Gaveau et al 2014). These fire activities are man-made and can be traced back to fire-related land management practices on forest plantations and can spread to natural forest. These impacts are visible in Sar images (Fig. 2).
+
+![fig](/figure_02.png)
+<sub>Figure 2. Sentinel-1 RGB (Red: VV-VH, Green: VH, Blue: VV) (left) of an area in Riau and the corresponding photos of the land cover (right – top: water body; middle: secondary peatland forest; plantation logging and secondary peatland forest) </sub>
