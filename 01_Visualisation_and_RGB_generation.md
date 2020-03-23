@@ -40,6 +40,7 @@ print('Entire collection of Sentinel-1 images: ', s1_collection);
 ![fig](/figure_04.png)
 <sub>Figure 4. Sentinel-1 ImageCollection in the console of GEE. </sub>
 
+### Questions
 __Question 1a:__ How is the ImageCollection arranged and what does it contain? 
 
 __Question 1b:__ How many Images are in this Collection?
