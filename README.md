@@ -35,3 +35,28 @@ The study area extends approximately 80 x 60 km (0°24’ N; 102°40’ E) and i
 
 ![fig](/figure_02.png)
 <sub>Figure 2. Sentinel-1 RGB (Red: VV-VH, Green: VH, Blue: VV) (left) of an area in Riau and the corresponding photos of the land cover (right – top: water body; middle: secondary peatland forest; plantation logging and secondary peatland forest) </sub>
+
+## Sentinel-1 satellite data
+Sentinel-1 is a C-band radar satellite providing the “Interferometric Wide swath” mode with co- and cross-polarization, a spatial resolution of 10 m and a temporal resolution of up to 6 days in the tropics [38].
+More to come!
+
+Detailed information regarding the Sentinel-1 sensors are accessible on – Reference.
+
+## Introduction to Google Earth Engine
+Google Earth Engine (GEE) provides vast amounts of satellite imagery and geospatial datasets ready to use for researcher, scientists and developers. Satellite images include ESA’s Sentinel missions providing both dense optical (Sentinel-2) and radar (Sentinel-1) data streams. These data streams can be directly processed on Googles servers making it a fast and convenient tool to analyse remote sensing data.
+For a brief introduction to capabilities of GEE you may watch the videos of this [playlist.](https://www.youtube.com/playlist?list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs)
+* [A short general introduction of what GEE is and what you can do with it.](https://www.youtube.com/watch?v=W2V_awzKDOg&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=2&t=0s)
+* [Difference between a server and a client.](https://www.youtube.com/watch?v=Tas0c4e_E0M&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=3&t=0s) It is important to notice that GEE is as server based platform and certain operations that you are used to carry out in R or other programming software are either not working or not advisable.
+* [General functions on filtering and displaying data in GEE.](https://www.youtube.com/watch?v=4w6Mt6HTC2I&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=4&t=0s)
+Note that the rest of the videos are not mandatory for this practical, but give a more in depth view on possibilities in GEE.
+
+### Creating and accessing your GEE account
+To start working in GEE you first need to sign up, if you have not done so beforehand. Please visit the following [website](https://earthengine.google.com/) to do so and click on the sign-up button on the top of the page (Fig. 3). After filling in all required information, the confirmation for your GEE account might take up to three days according to the website (usually its done in a matter of hours).
+
+![fig](/figure_03.png)
+<sub>Figure 3. GEE website - for using GEE, please sign-up on the top right (red box). </sub>
+
+
+
+
+
