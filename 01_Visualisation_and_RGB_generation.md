@@ -77,7 +77,7 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 
 ### Task
 Now try to select the VH band of “s1_image” yourself and visualize it similar to the VV-image.
-(Hint: Do it similar to the VV-polarization and fill out spaces of __???__ yourself - see below)
+(Hint: Do it similar to the VV-polarization and fill out spaces of __???__ in the code below)
 
 ```java
 var s1VH_image = ??? ;
