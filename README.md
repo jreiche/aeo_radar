@@ -30,8 +30,8 @@ Johannes Reiche, Bart Slagter & Johannes Balling
 
 
 
-# Introduction
-## Study area - Riau (Indonesia)
+# 1. Introduction
+## 1.1 Study area
 The study area is located in the province of Riau (Indonesia). Riau is located on the east coast of central Sumatra and experiences tropical equatorial climate. This climate is causing a persistent cloud cover throughout the entire year. Primary and secondary dryland and swamp and mangrove forest dominate the natural forest. Riau has the highest forest-cover-loss rates in Indonesia (Margono et al 2014) mainly driven by expansion and conversion to acacia, coconut, rubber plantations and oil palm (Fig.1) (Uryu et al 2008). Oil palm, representing the largest plantation area by species and cover about 3.08 Mha (~34) of all land area (Fig.1) (GlobalForestWatch).
 
 ![fig](/figure_01.png)
@@ -42,13 +42,13 @@ The study area extends approximately 80 x 60 km (0°24’ N; 102°40’ E) and i
 ![fig](/figure_02.png)
 <sub>Figure 2. Sentinel-1 RGB (Red: VV-VH, Green: VH, Blue: VV) (left) of an area in Riau and the corresponding photos of the land cover (right – top: water body; middle: secondary peatland forest; plantation logging and secondary peatland forest) </sub>
 
-## Sentinel-1 satellite data
+## 1.2 Data
 Sentinel-1 is a C-band radar satellite providing the “Interferometric Wide swath” mode with co- and cross-polarization, a spatial resolution of 10 m and a temporal resolution of up to 6 days in the tropics [38].
 More to come!
 
 Detailed information regarding the Sentinel-1 sensors are accessible on – Reference.
 
-## Introduction to Google Earth Engine
+# 2. Introduction to Google Earth Engine
 Google Earth Engine (GEE) provides vast amounts of satellite imagery and geospatial datasets ready to use for researcher, scientists and developers. Satellite images include ESA’s Sentinel missions providing both dense optical (Sentinel-2) and radar (Sentinel-1) data streams. These data streams can be directly processed on Googles servers making it a fast and convenient tool to analyse remote sensing data.
 For a brief introduction to capabilities of GEE you may watch the videos of this [playlist.](https://www.youtube.com/playlist?list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs)
 * [A short general introduction of what GEE is and what you can do with it.](https://www.youtube.com/watch?v=W2V_awzKDOg&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=2&t=0s)
@@ -64,8 +64,9 @@ To start working in GEE you first need to sign up, if you have not done so befor
 
 After signing up to GEE you are ready to login and analyse satellite data via the GEE code editor (Please watch the videos mentioned above to understand the structure of the GEE code editor). 
 
+# Google Earth Engine Exercises
 Please click on the different _.md_ files of the pratical and follow the instructions and tasks within them. It is important to carry out the different parts in the intended order of:
 
-1. Visualisation and RGB generation
-2. Multitemporal RGB generation
-3. Time series analysis
+3.1 Sentinel-1 visualisation and RGB generation
+3.2 Sentinel-1 multitemporal RGB generation
+3.3 Sentinel-1 time series analysis
