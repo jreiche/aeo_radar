@@ -24,5 +24,8 @@ Johannes Reiche, Bart Slagter & Johannes Balling
 
 
 
+# Introduction
+## Study area - Riau (Indonesia)
+The study area is located in the province of Riau (Indonesia). Riau is located on the east coast of central Sumatra and experiences tropical equatorial climate. This climate is causing a persistent cloud cover throughout the entire year. Primary and secondary dryland and swamp and mangrove forest dominate the natural forest. Riau has the highest forest-cover-loss rates in Indonesia (Margono et al 2014) mainly driven by expansion and conversion to acacia, coconut, rubber plantations and oil palm (Fig.1) (Uryu et al 2008). Oil palm, representing the largest plantation area by species and cover about 3.08 Mha (~34) of all land area (Fig.1) (GlobalForestWatch).
 
 
