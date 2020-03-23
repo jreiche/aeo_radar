@@ -41,7 +41,9 @@ print('Entire collection of Sentinel-1 images: ', s1_collection);
 <sub>Figure 4. Sentinel-1 ImageCollection in the console of GEE. </sub>
 
 __Question 1a:__ How is the ImageCollection arranged and what does it contain? 
+
 __Question 1b:__ How many Images are in this Collection?
+
 __Question 1c:__ How many Images of this collection were acquired in March 2020?
 
 
