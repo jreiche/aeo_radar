@@ -91,7 +91,7 @@ For a better understanding of the backscatter values for the five main classes y
 
 To describe a class specific backscatter characteristic, extract backscatter values for 10 pixels of homogeneous areas representing each of the five land cover classes via the GEE “_Inspector_”. Afterwards calculate the minimal value, the maximal value, the median and the standard deviation based on the 10 pixel for each class and fill it in a table (Example table 2.).
 
-![fig](/table_02.png)
+![fig](/table_02.PNG)
 <sub> Table 2. Sentinel-1 image modes at medium spatial resolution. VV - vertical transmit and vertical receive polarisation; VH - vertical transmit and horizontal receive polarisation. </sub>
 
 ### Question
