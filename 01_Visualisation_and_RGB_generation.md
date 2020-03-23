@@ -1,4 +1,4 @@
-#	Visualisation and RGB generation
+# 3.1	Visualisation and RGB generation
 ## Visualisation
 ### ! Important !
 ### For the entire practical: copy and paste all parts of the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the disered outcome.
@@ -41,11 +41,11 @@ print('Entire collection of Sentinel-1 images: ', s1_collection);
 <sub>Figure 4. Sentinel-1 ImageCollection in the console of GEE. </sub>
 
 ### Questions
-__Question 1a:__ How is the ImageCollection arranged and what does it contain? 
+__Question 3.1a:__ How is the ImageCollection arranged and what does it contain? 
 
-__Question 1b:__ How many Images are in this Collection?
+__Question 3.1b:__ How many Images are in this Collection?
 
-__Question 1c:__ How many Images of this collection were acquired in March 2020?
+__Question 3.1c:__ How many Images of this collection were acquired in March 2020?
 
 The visualisation of images is only possible for objects of the class _Image_ in GEE. Therefore we select the first Image of the _ImageCollection_.
 
@@ -95,11 +95,11 @@ To describe a class specific backscatter characteristic, extract backscatter val
 <sub> Table 2. Sentinel-1 image modes at medium spatial resolution. VV - vertical transmit and vertical receive polarisation; VH - vertical transmit and horizontal receive polarisation. </sub>
 
 ### Question
-__Question 2a:__ What differences do you see between the maps of the two polarizations?
+__Question 3.1d:__ What differences do you see between the maps of the two polarizations?
 
-__Question 2b:__ Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)? 
+__Question 3.1e:__ Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)? 
 
-__Question 2c:__ What are significant differences in the calculated median and standard deviation values for VV- and VH-polarization of each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
+__Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for VV- and VH-polarization of each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
 
 __Question 2d:__ Assign for each of the five main classes the range of backscatter values that you examine with the help of the GEE Inspector.
 
@@ -143,11 +143,11 @@ Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', false)
 ```
 
 ### Question
-__Question 3a:__ What differences do you see in the ratio band compared to the single VV and VH bands and which classes are visually especially good separately?
+__Question 3.1g:__ What differences do you see in the ratio band compared to the single VV and VH bands and which classes are visually especially good separately?
 
-__Question 3b:__ Which colours represent the five main land cover classes in the RGB and why?
+__Question 3.1h:__ Which colours represent the five main land cover classes in the RGB and why?
 
-__Question 3c:__ Why are plantations much greener in the RGB than regular forest?
+__Question 3.1i:__ Why are plantations much greener in the RGB than regular forest?
 
 ## Analysing and describing class specific backscatter characteristics
 Analysing and describing the SAR backscatter is fundamental to build the link between the observed SAR backscatter values and the objects on the ground (trees, river ...). This will assist to answer the following type of questions: How did the differently polarised radar (VV vs. VH) waves interact with the objects on the ground to result in the observed VV and VH backscatter values? Which scatter mechanisms (surface, volume and/or double bounce scattering) did cause for example high VH values over forest? 
