@@ -81,7 +81,7 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 > ```java
 > var s1VH_image = ??? ;
 > 
-> Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', false);
+> Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', true);
 > ```
 > __Question 3.1d:__ What differences do you see between the maps of the two polarizations?
 > 
