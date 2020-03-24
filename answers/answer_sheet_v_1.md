@@ -28,8 +28,14 @@ __Question 3.1d:__ What differences do you see between the maps of the two polar
 __Question 3.1e:__ Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)?
 * Both polarizations seems similar for forest, but the difference for non-forest and forest is much more visible in VH
 
-__Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
-* 
+__Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B) in VV-polarization? Which class shows the lowest and highest values?
+* see values in figure
+* highest = built-up (median 0.4)
+* lowest = water (median -21.1)
+
+![fig](/answers/answer_sheet_table_01.PNG)
+<sub> Table of values for the five different land cover classes for both polarizations </sub>
+
 
 Question 3.1g: What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?
 
@@ -41,9 +47,10 @@ Question 3.1j: Why does water (W) appear black in the RGB? What happens to the r
 
 Question 3.1k: Why are plantations much greener in the RGB than regular forest?
 
+__Question__
 Analysing and describing class specific backscatter characteristics
 Analysing and describing the SAR backscatter is fundamental to build the link between the observed SAR backscatter values and the objects on the ground (trees, river ...). This will assist to answer the following type of questions: How did the differently polarised radar (VV vs. VH) waves interact with the objects on the ground to result in the observed VV and VH backscatter values? Which scatter mechanisms (surface, volume and/or double bounce scattering) did cause for example high VH values over forest? First, the backscatter characteristics of the five main classes are to be analysed and described: forest (F), non-forest (NF), plantation (P), built-up (B) and water (W). This is to be done individually for VV, VH and “VVVH backscatter ratio”.
-
+* Maybe we could insert the answers from the other course as the question is the same. Also this question block might be too much!
 ___
 
 
