@@ -10,19 +10,26 @@ __Question 3.1c:__ How many Images of this collection were acquired in March 202
 
 * 5 Images (2x 01-03-2020; 1x 08-03-2020; 2x 13-03-2020)
 ___
-Task
+__Task__
 Now try to select the VH band of “s1_image” yourself and visualize it. (Hint: Do it similar to the VV-polarization and fill out spaces of ??? in the code below)
 
-var s1VH_image = ??? ;
+var s1VH_image = s1_image.select('VH');
 
-Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', true);
+Map.addLayer(s1VH_image, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', true);
 ___
 
-Question 3.1d: What differences do you see between the maps of the two polarizations?
+__Question 3.1d:__ What differences do you see between the maps of the two polarizations?
+* Certain Plantations better visible in VV due to lower backscatter values
+* Water is smoother in VH
+* non-forest is more visible in VH
+* some strong scatter in built-up areas vanish or have less impact in VH
+* forest is similar in both polarizations, but VH seems smoother
 
-Question 3.1e: Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)?
+__Question 3.1e:__ Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)?
+* Both polarizations seems similar for forest, but the difference for non-forest and forest is much more visible in VH
 
-Question 3.1f: What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
+__Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
+* 
 
 Question 3.1g: What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?
 
