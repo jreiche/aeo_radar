@@ -54,7 +54,7 @@ The visualisation of images is only possible for objects of the class _Image_ in
 var s1_image = s1_collection.first();
 
 // Print this image to the console
-print('First Sentinel-1 image from collection: ', s1_image)
+print('First Sentinel-1 image from collection: ', s1_image);
 ```
 Take a look at the single Image and print it in the console. The metadata of the image is printed as "_First Sentinel-1 image from collection_" in the console.
 
@@ -63,7 +63,7 @@ To visualize a VV-polarized Sentinel-1 image as a grayscale, we first subset to 
 ```java
 var s1VV_image = s1_image.select('VV');
 
-Map.addLayer(s1VV_image, {min: -25, max: 0, palette: ['black', 'white']}, 'Sentinel-1 VV image', false);
+Map.addLayer(s1VV_image, {min: -25, max: 0, palette: ['black', 'white']}, 'Sentinel-1 VV image', true);
 ```
 
 Examine the printed Sentinel-1 VV image (Fig. 2). To get a better idea of the study area, you may also deselect the visualized layer (purple box in Fig. 2) and change the basemap to an optical satellite imagery – “Satellite” (orange box in Fig. 2). 
