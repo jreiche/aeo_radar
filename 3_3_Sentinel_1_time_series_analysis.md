@@ -100,19 +100,21 @@ If you want to create a new time series for a specific pixel __FIRST__ delete th
 ![fig](/figures/figure_12.png)
 <sub>Figure 12. How to delete a created geometry in GEE. </sub>
 
-### Question
-__Question 3.3a:__ Visualize time series for the main five classes (forest, non-forest, plantation, water and built-up) and explain the difference in the two polarizations of VV and VH!
-
-__Question 3.3b:__ What are the ranges of the backscatter values that you observe for the five main classes?
-
-__Question 3.3c:__ Which scatter mechanism(s) cause the high VH backscatter over forest (F) when compared to non-forest (NF) areas? Briefly explain the mechanism(s).
-
-__Question 3.3d:__ Is the signal stable over forest? If not, why does it change?
-
-__Question 3.3e:__ How do you explain the difference of backscatter level for natural forest and plantation?
-
-__Question 3.3f:__ Why does water (W) appear black in the RGB? What happens to the radar wave when interacting with a flat (non-rough) water surface? It is helpful to make a sketch including the side-looking radar.
-
-__Question 3.3g:__ Select some areas that show changes in the multitemporal RGB and plot their time series! Describe what you see and can you explain the sudden backscatter increase after changes?
-
-__Extra question:__ The analysis was done using C-band SAR images acquired by Sentinel-1 (5.3 cm wavelength). How would the separability of forest and non-forest change for a L-band SAR image (e.g. ALOS Palsar 2) considering its longer wavelength (23.6 cm wavelength). Do you expect the separability to be better or worse? Explain!
+>___
+>### Question
+>__Question 3.3a:__ Visualize time series for the main five classes (forest, non-forest, plantation, water and built-up) and explain the difference in the two polarizations of VV and VH!
+>
+>__Question 3.3b:__ What are the ranges of the backscatter values that you observe for the five main classes?
+>
+>__Question 3.3c:__ Which scatter mechanism(s) cause the high VH backscatter over forest (F) when compared to non-forest (NF) areas? Briefly explain the mechanism(s).
+>
+>__Question 3.3d:__ Is the signal stable over forest? If not, why does it change?
+>
+>__Question 3.3e:__ How do you explain the difference of backscatter level for natural forest and plantation?
+>
+>__Question 3.3f:__ Why does water (W) appear black in the RGB? What happens to the radar wave when interacting with a flat (non-rough) water surface? It is helpful to make a sketch including the side-looking radar.
+>
+>__Question 3.3g:__ Select some areas that show changes in the multitemporal RGB and plot their time series! Describe what you see and can you explain the sudden backscatter increase after changes?
+>
+>__Extra question:__ The analysis was done using C-band SAR images acquired by Sentinel-1 (5.3 cm wavelength). How would the separability of forest and non-forest change for a L-band SAR image (e.g. ALOS Palsar 2) considering its longer wavelength (23.6 cm wavelength). Do you expect the separability to be better or worse? Explain!
+>___
