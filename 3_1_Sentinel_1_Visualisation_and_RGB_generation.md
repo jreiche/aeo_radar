@@ -104,7 +104,7 @@ To describe a class specific backscatter characteristic, extract backscatter val
 > ___
 > ### Question
 > 
-> __Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for VV- and VH-polarization > of each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
+> __Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for VV- and VH-polarization  of each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
 > 
 > __Question 3.1g:__ Assign for each of the five main classes the range of backscatter values that you examine with the help of the GEE Inspector.
 > ___
