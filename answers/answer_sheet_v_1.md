@@ -126,6 +126,22 @@ ___
 
 __Question 3.3a:__ Visualize time series for the main five classes (forest, non-forest, plantation, water and built-up) and explain possible differences in VV- and VH-polarizations!
 
+![fig](/answers/answer_sheet_forest_ts.PNG)
+<sub> Forest ts </sub>
+
+![fig](/answers/answer_sheet_plantation_ts.PNG)
+<sub> Plantation ts </sub>
+
+![fig](/answers/answer_sheet_non_forest_ts.PNG)
+<sub> Non - Forest ts </sub>
+
+![fig](/answers/answer_sheet_built_up_ts.PNG)
+<sub> Built up ts </sub>
+
+![fig](/answers/answer_sheet_water_ts.PNG)
+<sub> Water ts </sub>
+
+
 __Question 3.3b:__ Which scatter mechanism(s) cause the high VH backscatter over forest (F) when compared to non-forest (NF) areas? Briefly explain the mechanism(s).
 * Maybe just use the answer from the answer sheet of the initial AEO as this question is directly out of there
 
@@ -137,6 +153,10 @@ __Question 3.3d:__ How do you explain the difference of backscatter level for na
 * plantation has less volume scatters (less leaves - Increased VH-Polarization) and distinct vertical structures (VV - polarization sensible)
 
 __Question 3.3e:__ Select some areas that show changes in the multitemporal RGB and plot their time series! Describe what you see and can you explain the sudden backscatter increase after changes?
+
+![fig](/answers/answer_sheet_plantation_disturbance_ts.PNG)
+<sub> Plantation disturbance ts </sub>
+
 * Drop in both polarizations
 * Sometimes a bigger drop in VH than in VV
 
