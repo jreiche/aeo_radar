@@ -44,7 +44,7 @@ var s1_median_2018Q1 = s1_collection.filterDate('2018-01-01','2018-04-01').media
 var s1_median_2019Q1 = s1_collection.filterDate('2019-01-01','2019-04-01').median();
 var s1_median_2020Q1 = s1_collection.filterDate('2020-01-01','2020-04-01').median();
 ```
-Feel free to print the results and look at the output of the different variables in the console (e.g. via: _print(s1_median_2018Q1,” s1_median_2018Q1”)_). 
+Feel free to print the results and look at the output of the different variables in the console (e.g. via: _print('s1_median_2018Q1:',s1_median_2018Q1)_). 
 As you see the median was calculated for each band separately. In order to visualize an RGB we need to merge the single bands of the three calculated median composite. 
 Here we select the VV polarization and rename the band to better localize it in our final multiband image. 
 Afterwards we merge all single VV bands of the median composites in one multiband Image.
@@ -57,14 +57,12 @@ var s1VV_median_2020Q1 = s1_median_2020Q1.select('VV').rename('VV_2020Q1')
 
 // Merge the three images back together, to create one multitemporal image with three bands
 var s1VV_multitemporal = s1VV_median_2018Q1.addBands(s1VV_median_2019Q1.addBands(s1VV_median_2020Q1));
-```
 
-Print the result in the console and see that we now have three bands in one image of the first quantile median composites of 2018, 2019 and 2020 (Fig. 2).
-
-```java
 // Print the multitemporal image to the console
 print('Multitemporal Sentinel-1 VV image: ', s1VV_multitemporal)
 ```
+Look at the printed result in the console and see that now there are three bands in one image of the first quantile median composites of 2018, 2019 and 2020 (Fig. 2).
+
 ![fig](/figures/figure_09.png)
 <sub>Figure 2. Multiband image of the first quantile median composites of 2018, 2019 and 2020. </sub>
 
@@ -83,7 +81,7 @@ var visualisation_params = {
         "gamma": 1
 };
 
-Map.addLayer(s1VV_multitemporal, visualisation_params, 'Sentinel-1 multitemporal composite RGB', false)
+Map.addLayer(s1VV_multitemporal, visualisation_params, 'Sentinel-1 multitemporal composite RGB', true)
 ```
 
 The multitemporal RGB shows various changes throughout the aoi (Fig 3.). 
