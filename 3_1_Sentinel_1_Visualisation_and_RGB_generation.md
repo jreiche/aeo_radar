@@ -150,7 +150,9 @@ Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', true)
 >
 > __Question 3.1i:__ Which colours represent the five main land cover classes in the RGB?
 >
->__Question 3.1j:__ Why are plantations much greener in the RGB than regular forest?
+>__Question 3.1j:__ Why does water (W) appear black in the RGB? What happens to the radar wave when interacting with a flat (non-rough) water surface? It is helpful to make a sketch including the side-looking radar.
+>
+>__Question 3.1k:__ Why are plantations much greener in the RGB than regular forest?
 > ___
 
 ## Analysing and describing class specific backscatter characteristics
