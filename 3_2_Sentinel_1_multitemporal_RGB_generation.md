@@ -103,7 +103,9 @@ ___
 >__Question 3.2c:__ Why are some areas of the shore in a different colour?
 ___
 
-### Task
-Create the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VH polarization. Follow the code above and change if necessary parts to select the VH polarization.
-
-__Question 3.2d:__ How does the RGB change if you calculate it for the VH-polarization instead of the VV?  Why are these areas different?
+> ___
+> ### Task
+> Create the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VH polarization. Follow the code above and change if > necessary parts to select the VH polarization.
+>
+>__Question 3.2d:__ How does the RGB change if you calculate it for the VH-polarization instead of the VV?  Why are these areas different?
+> ___
