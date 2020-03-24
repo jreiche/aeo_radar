@@ -1,6 +1,5 @@
 # 3.1	Sentinel-1 visualisation and RGB generation
 ## Visualisation
-### ! Important !
 ### For the entire practical: copy and paste all parts of the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the disered outcome.
 
 To start analysing Satellite Imagery in GEE you first have to sign up and login into GEE code editor. Once you have done that we can start by selecting an Area of Interest (aoi) and zooming to it.
