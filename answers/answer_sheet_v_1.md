@@ -40,10 +40,19 @@ __Question 3.1f:__ What are significant differences in the calculated median and
 __Question 3.1g:__ What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?
 * Water due to very low values (insert value range) easy to separate for both polarizations
 * Built-up due to high values (insert value range) easy to separate for both polarizations
-* 
+* Plantation is easier to separate for VV-polarization due to higher values for Forest compared to Plantations (For VH quite similar)
+* Non-forest is easier to separate for VH-polarization due to lower values 
+* Forest see Plantations!
 
+__Question 3.1h:__ What differences do you see in the ratio band compared to the single VV and VH bands and which classes are visually good to separate?
+* Every land cover that shows differences between VV- and VH-Polarization are very distinct and therefore also easy to detect
 
-Question 3.1h: What differences do you see in the ratio band compared to the single VV and VH bands and which classes are visually good to separate?
+  * Plantations
+  * non-forest
+  
+* Water shows high values and beforehand low values for both polarizations
+* Forest seems similar
+* Built-up still shows very high values
 
 Question 3.1i: Which colours represent the five main land cover classes in the RGB?
 
