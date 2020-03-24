@@ -47,18 +47,16 @@ To get a better understanding of GEE and the data structure look at the ImageCol
 > __Question 3.1c:__ How many Images of this collection were acquired in March 2020?
 > ___
 
-The visualisation of images is only possible for objects of the class _Image_ in GEE. Therefore we select the first Image of the _ImageCollection_.
+The visualisation of images is only possible for objects of the class _Image_ in GEE. Therefore we select the first Image of the _ImageCollection_. 
 
 ```java
 // Obtain the first image from the Sentinel-1 collection (acquired at February 1st, 2020)
 var s1_image = s1_collection.first();
-```
-Take a look at the single Image and print it in the console. The metadata of the image is printed in the console.
 
-```java
 // Print this image to the console
 print('First Sentinel-1 image from collection: ', s1_image)
 ```
+Take a look at the single Image and print it in the console. The metadata of the image is printed as "First Sentinel-1 image from collection" in the console.
 
 To visualize a VV-polarized Sentinel-1 image as a grayscale, we first subset to the VV-band of this Sentinel-1 image. After that we visualize the band.
 
