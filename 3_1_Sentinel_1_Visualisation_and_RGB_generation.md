@@ -33,7 +33,7 @@ var s1_collection = ee.ImageCollection('COPERNICUS/S1_GRD')
 print('Entire collection of Sentinel-1 images: ', s1_collection);
 ```
 
-To get a better understanding of GEE and the data structure look at the ImageCollection “Entire collection of Sentinel-1 images”. This ImageCollection should be printed in the console on the top right after running the script (Fig. 1).
+To get a better understanding of GEE and the data structure look at the ImageCollection “_Entire collection of Sentinel-1 images_”. This ImageCollection should be printed in the console on the top right after running the script (Fig. 1).
 
 ![fig](/figures/figure_04.png)
 <sub>Figure 1. Sentinel-1 ImageCollection in the console of GEE. </sub>
