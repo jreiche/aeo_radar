@@ -56,7 +56,7 @@ var s1_image = s1_collection.first();
 // Print this image to the console
 print('First Sentinel-1 image from collection: ', s1_image)
 ```
-Take a look at the single Image and print it in the console. The metadata of the image is printed as "First Sentinel-1 image from collection" in the console.
+Take a look at the single Image and print it in the console. The metadata of the image is printed as "_First Sentinel-1 image from collection_" in the console.
 
 To visualize a VV-polarized Sentinel-1 image as a grayscale, we first subset to the VV-band of this Sentinel-1 image. After that we visualize the band.
 
