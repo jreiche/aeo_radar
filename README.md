@@ -13,7 +13,8 @@ Johannes Reiche, Bart Slagter & Johannes Balling
 
 ### Learning goals
 * Introduction to GEE
-* Visualisation and RGB generation of SAR images
+* Visualisation and RGB generation of Sentinel-1 images
+* Basic time series analysis of Sentinel-1 images
 * Understanding basic SAR backscatter characteristics (VV and VH backscatter values and distributions) over different land cover (forest, plantation, non-forest, built-up and water)
 * Linking the backscatter characteristics to particular scatter mechanism on the ground (surface, volume and double bounce scattering). Understanding interactions of the radar wave with objects on the ground (tree, water ...).
 
