@@ -40,14 +40,14 @@ print('Entire collection of Sentinel-1 images: ', s1_collection);
 ![fig](/figures/figure_04.png)
 <sub>Figure 1. Sentinel-1 ImageCollection in the console of GEE. </sub>
 
-___
-### Question
-__Question 3.1a:__ How is the ImageCollection arranged and what does it contain? 
-
-__Question 3.1b:__ How many Images are in this Collection?
-
-__Question 3.1c:__ How many Images of this collection were acquired in March 2020?
-___
+> ___
+> ### Question
+> __Question 3.1a:__ How is the ImageCollection arranged and what does it contain? 
+> 
+> __Question 3.1b:__ How many Images are in this Collection?
+> 
+> __Question 3.1c:__ How many Images of this collection were acquired in March 2020?
+> ___
 
 The visualisation of images is only possible for objects of the class _Image_ in GEE. Therefore we select the first Image of the _ImageCollection_.
 
@@ -77,17 +77,17 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 ![fig](/figures/figure_05.png)
 <sub>Figure 2. Sentinel-1 VV image for February 1st, 2020. </sub>
 
-___
-### Task
-Now try to select the VH band of “s1_image” yourself and visualize it similar to the VV-image.
-(Hint: Do it similar to the VV-polarization and fill out spaces of __???__ in the code below)
-
-```java
-var s1VH_image = ??? ;
-
-Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', false);
-```
-___
+> ___
+> ### Task
+> Now try to select the VH band of “s1_image” yourself and visualize it.
+> (Hint: Do it similar to the VV-polarization and fill out spaces of __???__ in the code below)
+>
+> ```java
+> var s1VH_image = ??? ;
+> 
+> Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', false);
+> ```
+> ___
 
 For a better understanding of the backscatter values for the five main classes you might check their specific values, by selecting the “_Inspector_” on the top right and then select a point with the mouse courser by clicking on the maps (Fig. 3).
 
