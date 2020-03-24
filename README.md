@@ -51,10 +51,7 @@ The study area extends approximately 80 x 60 km (0°24’ N; 102°40’ E) and i
 <sub>Figure 2. Sentinel-1 RGB (Red: VV-VH, Green: VH, Blue: VV) (left) of an area in Riau and the corresponding photos of the land cover (right – top: water body; middle: secondary peatland forest; plantation logging and secondary peatland forest) </sub>
 
 ## 1.2 Data
-Sentinel-1 is a C-band radar satellite providing the “Interferometric Wide swath” mode with co- and cross-polarization, a spatial resolution of 10 m and a temporal resolution of up to 6 days in the tropics [38].
-More to come!
-
-Detailed information regarding the Sentinel-1 sensors are accessible on – Reference.
+The Sentinel-1 mission comprises a constellation of two polar-orbiting satellites, operating day and night performing C-band synthetic aperture radar imaging, enabling them to acquire imagery regardless of the weather. This C-band radar satellite provides - depending on the acquisition mode - co- and cross-polarization, a spatial resolution of 10 m and a temporal resolution of up to 6 days in the tropics [38]. In this practical we will use Ground Range Detected (GRD) products, which consists of focused SAR data that has been detected, multi-looked and projected to ground range using an Earth ellipsoid model. Phase information is lost. The resulting product has approximately square spatial resolution pixels and square pixel spacing with reduced speckle at the cost of worse spatial resolution. For a more indepth dscription please visit [ESA's website](https://sentinel.esa.int/web/sentinel/missions/sentinel-1).
 
 # 2. Introduction to Google Earth Engine
 Google Earth Engine (GEE) provides vast amounts of satellite imagery and geospatial datasets ready to use for researcher, scientists and developers. Satellite images include ESA’s Sentinel missions providing both dense optical [(Sentinel-2)](https://developers.google.com/earth-engine/datasets/catalog/sentinel-2) and radar [(Sentinel-1)](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD) data streams. These data streams can be directly processed on Googles servers making it a fast and convenient tool to analyse remote sensing data.
