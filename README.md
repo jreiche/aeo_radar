@@ -57,11 +57,12 @@ More to come!
 Detailed information regarding the Sentinel-1 sensors are accessible on – Reference.
 
 # 2. Introduction to Google Earth Engine
-Google Earth Engine (GEE) provides vast amounts of satellite imagery and geospatial datasets ready to use for researcher, scientists and developers. Satellite images include ESA’s Sentinel missions providing both dense optical (Sentinel-2) and radar (Sentinel-1) data streams. These data streams can be directly processed on Googles servers making it a fast and convenient tool to analyse remote sensing data.
+Google Earth Engine (GEE) provides vast amounts of satellite imagery and geospatial datasets ready to use for researcher, scientists and developers. Satellite images include ESA’s Sentinel missions providing both dense optical [(Sentinel-2)](https://developers.google.com/earth-engine/datasets/catalog/sentinel-2) and radar [(Sentinel-1)](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD) data streams. These data streams can be directly processed on Googles servers making it a fast and convenient tool to analyse remote sensing data.
 For a brief introduction to capabilities of GEE you may watch the videos of this [playlist.](https://www.youtube.com/playlist?list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs)
 * [A short general introduction of what GEE is and what you can do with it.](https://www.youtube.com/watch?v=W2V_awzKDOg&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=2&t=0s)
 * [Difference between a server and a client.](https://www.youtube.com/watch?v=Tas0c4e_E0M&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=3&t=0s) It is important to notice that GEE is as server based platform and certain operations that you are used to carry out in R or other programming software are either not working or not advisable.
 * [General functions on filtering and displaying data in GEE.](https://www.youtube.com/watch?v=4w6Mt6HTC2I&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=4&t=0s)
+
 Note that the rest of the videos are not mandatory for this practical, but give a more in depth view on possibilities in GEE.
 
 ### Creating and accessing your GEE account
