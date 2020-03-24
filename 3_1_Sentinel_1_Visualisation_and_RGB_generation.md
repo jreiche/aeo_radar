@@ -13,7 +13,7 @@ var aoi = ee.Geometry.Polygon(
           [103.2639683751258, 0.8283349585410177]]], null, false);
 
 // Zoom to this area of of interest
-Map.centerObject(aoi);
+Map.centerObject(aoi,10);
 ```
 In order to access the Sentinel-1 data in GEE you need to search the GEE catalogue of provided data and filter based on the desired aoi and date. Therefore you need to define a start and end date and several sensor metadata properties (eg: Instrument mode, orbit pass, etc.).
 
