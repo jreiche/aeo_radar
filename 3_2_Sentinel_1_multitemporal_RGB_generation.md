@@ -3,7 +3,7 @@
 
 This part of the practical will give you a short overview on how to generate median values for each pixel over a set period of time for one Sentinel-1 polarization and then plot these as an RGB.
 
-The following code is creating an aoi, searches the Sentinel-1 catalogue within GEE based on dates and instrument metadata and prints the ImageCollection.
+The following code is creating an aoi, searches the Sentinel-1 catalogue within GEE based on dates and instrument metadata and prints the _ImageCollection_.
 
 ```java
 // Define a rectangular area of interest, by listing coordinates
@@ -35,7 +35,7 @@ Check the entire ImageCollection via the output in the console (Fig. 1).
 ![fig](/figures/figure_08.png)
 <sub>Figure 1. ImageCollection of the Sentinel-1 catalogue for the desired aoi from 2018 – 2020/04. </sub>
 
-We are left with 192 single images and need to reduce this information in order to create a meaningful multitemporal RGB. 
+We are left with 192 single images and need to reduce the data quantity in order to create a meaningful multitemporal RGB. 
 First calculate medians for each pixel and each band in the Sentinel-1 ImageCollection for the first quantiles of the years 2018, 2019 and 2020.
 
 ```java
@@ -44,10 +44,9 @@ var s1_median_2018Q1 = s1_collection.filterDate('2018-01-01','2018-04-01').media
 var s1_median_2019Q1 = s1_collection.filterDate('2019-01-01','2019-04-01').median();
 var s1_median_2020Q1 = s1_collection.filterDate('2020-01-01','2020-04-01').median();
 ```
-Feel free to print the results and look at the output of the different variables in the console (e.g. via: _print('s1_median_2018Q1:',s1_median_2018Q1)_). 
-As you see the median was calculated for each band separately. In order to visualize an RGB we need to merge the single bands of the three calculated median composite. 
-Here we select the VV polarization and rename the band to better localize it in our final multiband image. 
-Afterwards we merge all single VV bands of the median composites in one multiband Image.
+Feel free to print the results and look at the output in the console (e.g. via: _print('s1_median_2018Q1:',s1_median_2018Q1)_). 
+As you see the median was calculated for each band separately. 
+Now select the VV polarization and rename the band to better localize it later. Afterwards merge all single VV bands of the median composites in one multiband Image.
 
 ```java
 // Select from each median composite the VV polarisation and rename this corresponding to the time period
@@ -61,7 +60,7 @@ var s1VV_multitemporal = s1VV_median_2018Q1.addBands(s1VV_median_2019Q1.addBands
 // Print the multitemporal image to the console
 print('Multitemporal Sentinel-1 VV image: ', s1VV_multitemporal)
 ```
-Look at the printed result in the console and see that now there are three bands in one image of the first quantile median composites of 2018, 2019 and 2020 (Fig. 2).
+Look at the printed result of the multiband image containing the first quantile median composites of 2018, 2019 and 2020 (Fig. 2).
 
 ![fig](/figures/figure_09.png)
 <sub>Figure 2. Multiband image of the first quantile median composites of 2018, 2019 and 2020. </sub>
@@ -85,23 +84,23 @@ Map.addLayer(s1VV_multitemporal, visualisation_params, 'Sentinel-1 multitemporal
 ```
 
 The multitemporal RGB shows various changes throughout the aoi (Fig 3.). 
-In order to check the visual parameters (what band is the red channel, etc) you can also adjust and check them in the map layout of GEE (Top right of Fig 3.).
+In order to check the visual parameters (what band is the red channel, etc) you may adjust and check them in the map layout of GEE (Top right of Fig 3.).
 
 ![fig](/figures/figure_10.png)
 <sub>Figure 3. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization. </sub>
 
 > ___
 > ### Question
->__Question 3.2a:__ What areas show the most change and why is that? What main class is showing the most change?
+>__Question 3.2a:__ What areas show the most change? Is the change equally distributed for all land cover classes?
 >
->__Question 3.2b:__ What do the different colours of the map show us (e.g. What do blue, red and yellow patches indicate?)? 
+>__Question 3.2b:__ What do the different colours of the map indicate (e.g.blue, red and yellow patches?)? 
 >
->__Question 3.2c:__ Why are some areas of the shore in a different colour?
+>__Question 3.2c:__ Why are some areas along the shoreline in a different colour?
 > ___
 
 > ___
 > ### Task
-> Create the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VH polarization. Follow the code above and change if  necessary parts to select the VH polarization.
+> Create the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VH polarization. Follow the code from above and change if necessary.
 >
->__Question 3.2d:__ How does the RGB change if you calculate it for the VH-polarization instead of the VV?  Why are these areas different?
+>__Question 3.2d:__ How does the RGB change for the VH-polarization instead of VV? Why are these areas different?
 > ___
