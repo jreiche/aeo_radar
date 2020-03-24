@@ -31,7 +31,7 @@ print('Entire collection of Sentinel-1 images: ', s1_collection);
 ```
 Check the entire ImageCollection via the output in the console (Fig. 8). 
 
-![fig](/figure_08.png)
+![fig](/figures/figure_08.png)
 <sub>Figure 8. ImageCollection of the Sentinel-1 catalogue for the desired aoi from 2018 – 2020/04. </sub>
 
 We are left with 192 single images and need to reduce this information in order to create a meaningful multitemporal RGB. 
@@ -64,7 +64,7 @@ Print the result in the console and see that we now have three bands in one imag
 // Print the multitemporal image to the console
 print('Multitemporal Sentinel-1 VV image: ', s1VV_multitemporal)
 ```
-![fig](/figure_09.png)
+![fig](/figures/figure_09.png)
 <sub>Figure 9. Multiband image of the first quantile median composites of 2018, 2019 and 2020. </sub>
 
 All that is left to do is to clip the result to the desired aoi and visualize the RGB based on various parameters.
@@ -88,7 +88,7 @@ Map.addLayer(s1VV_multitemporal, visualisation_params, 'Sentinel-1 multitemporal
 The multitemporal RGB shows various changes throughout the aoi (Fig 10.). 
 In order to check the visual parameters (what band is the red channel, etc) you can also adjust and check them in the map layout of GEE (Top right of Fig 10.).
 
-![fig](/figure_10.png)
+![fig](/figures/figure_10.png)
 <sub>Figure 10. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization. </sub>
 
 ### Question
