@@ -54,11 +54,19 @@ __Question 3.1h:__ What differences do you see in the ratio band compared to the
 * Forest seems similar
 * Built-up still shows very high values
 
-Question 3.1i: Which colours represent the five main land cover classes in the RGB?
+__Question 3.1i:__ Which colours represent the five main land cover classes in the RGB?
+* Blue = water
+* Green = plantations
+* beige = forest
+* white = built-up
+* violet or pink = non-forest
 
-Question 3.1j: Why does water (W) appear black in the RGB? What happens to the radar wave when interacting with a flat (non-rough) water surface? It is helpful to make a sketch including the side-looking radar.
+__Question 3.1j:__ Why does water (W) appear black in the RGB? What happens to the radar wave when interacting with a flat (non-rough) water surface? It is helpful to make a sketch including the side-looking radar.
+* Scatter away from satellite due to mirror effect on the smooth surface of the water (due to side-looking into the directions of the satellite) --> no recieved energy at satellite over water 
 
-Question 3.1k: Why are plantations much greener in the RGB than regular forest?
+
+__Question 3.1k:__ Why are plantations much greener in the RGB than regular forest?
+* Higher values for VH polarization --> less volume scattering, but distinct vertical profiles of tree stems and therefore low backscatter in VV
 
 __Question__
 Analysing and describing class specific backscatter characteristics
