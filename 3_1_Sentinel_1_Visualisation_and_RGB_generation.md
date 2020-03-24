@@ -118,7 +118,7 @@ __Note__ that in order to successfully run this code you need to have defined th
 // Calculate the  VVVH backscatter ratio by subtracting the single bands of VV and VH
 var s1VVVH_image = (s1VV_image.subtract(s1VH_image)).rename('VVVH');
 
-Map.addLayer(s1VVVH_image, {min: 0, max: 10, palette: ['black', 'white']}, 'Sentinel-1 VVVH image', false);
+Map.addLayer(s1VVVH_image, {min: 0, max: 10, palette: ['black', 'white']}, 'Sentinel-1 VVVH image', true);
 ```
 
 ![fig](/figures/figure_07.png)
@@ -142,7 +142,7 @@ var visualisation_params = {
         "gamma": [1,1,1]
 };
 
-Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', false)
+Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', true)
 ```
 > ___
 > ### Question
