@@ -87,6 +87,9 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 > 
 > Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', false);
 > ```
+> __Question 3.1d:__ What differences do you see between the maps of the two polarizations?
+> 
+> __Question 3.1e:__ Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)? 
 > ___
 
 For a better understanding of the backscatter values for the five main classes you might check their specific values, by selecting the “_Inspector_” on the top right and then select a point with the mouse courser by clicking on the maps (Fig. 3).
@@ -101,9 +104,6 @@ To describe a class specific backscatter characteristic, extract backscatter val
 
 ___
 ### Question
-__Question 3.1d:__ What differences do you see between the maps of the two polarizations?
-
-__Question 3.1e:__ Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)? 
 
 __Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for VV- and VH-polarization of each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
 
