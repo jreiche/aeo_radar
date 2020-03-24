@@ -102,13 +102,13 @@ To describe a class specific backscatter characteristic, extract backscatter val
 ![fig](/figures/table_01.PNG)
 <sub> Table 1. Sentinel-1 image modes at medium spatial resolution. VV - vertical transmit and vertical receive polarisation; VH - vertical transmit and horizontal receive polarisation. </sub>
 
-___
-### Question
-
-__Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for VV- and VH-polarization of each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
-
-__Question 3.1g:__ Assign for each of the five main classes the range of backscatter values that you examine with the help of the GEE Inspector.
-___
+> ___
+> ### Question
+> 
+> __Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for VV- and VH-polarization > of each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
+> 
+> __Question 3.1g:__ Assign for each of the five main classes the range of backscatter values that you examine with the help of the GEE Inspector.
+> ___
 
 ## Calculating “VVVH backscatter ratio” and RGB composite creation
 
@@ -148,14 +148,14 @@ var visualisation_params = {
 
 Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', false)
 ```
-___
-### Question
-__Question 3.1h:__ What differences do you see in the ratio band compared to the single VV and VH bands and which classes are visually especially good separately?
-
-__Question 3.1i:__ Which colours represent the five main land cover classes in the RGB and why?
-
-__Question 3.1j:__ Why are plantations much greener in the RGB than regular forest?
-___
+> ___
+> ### Question
+> __Question 3.1h:__ What differences do you see in the ratio band compared to the single VV and VH bands and which classes are visually especially good separately?
+>
+> __Question 3.1i:__ Which colours represent the five main land cover classes in the RGB and why?
+>
+>__Question 3.1j:__ Why are plantations much greener in the RGB than regular forest?
+> ___
 
 ## Analysing and describing class specific backscatter characteristics
 Analysing and describing the SAR backscatter is fundamental to build the link between the observed SAR backscatter values and the objects on the ground (trees, river ...). This will assist to answer the following type of questions: How did the differently polarised radar (VV vs. VH) waves interact with the objects on the ground to result in the observed VV and VH backscatter values? Which scatter mechanisms (surface, volume and/or double bounce scattering) did cause for example high VH values over forest? 
