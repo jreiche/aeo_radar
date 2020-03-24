@@ -103,7 +103,7 @@ In order to check the visual parameters (what band is the red channel, etc) you 
 
 > ___
 > ### Task
-> Create the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VH polarization. Follow the code above and change if > necessary parts to select the VH polarization.
+> Create the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VH polarization. Follow the code above and change if  necessary parts to select the VH polarization.
 >
 >__Question 3.2d:__ How does the RGB change if you calculate it for the VH-polarization instead of the VV?  Why are these areas different?
 > ___
