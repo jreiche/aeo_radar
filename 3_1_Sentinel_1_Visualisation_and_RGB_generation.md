@@ -31,14 +31,14 @@ var s1_collection = ee.ImageCollection('COPERNICUS/S1_GRD')
   .filterBounds(aoi);
 ```
 
-To get a better understanding of GEE and the data structure look at the ImageCollection “Entire collection of Sentinel-1 images”. This ImageCollection should be printed in the console on the top right after running the script (Fig. 4).
+To get a better understanding of GEE and the data structure look at the ImageCollection “Entire collection of Sentinel-1 images”. This ImageCollection should be printed in the console on the top right after running the script (Fig. 1).
 
 ```java
 // Print the image collection to the console
 print('Entire collection of Sentinel-1 images: ', s1_collection);
 ```
 ![fig](/figures/figure_04.png)
-<sub>Figure 4. Sentinel-1 ImageCollection in the console of GEE. </sub>
+<sub>Figure 1. Sentinel-1 ImageCollection in the console of GEE. </sub>
 
 ### Question
 __Question 3.1a:__ How is the ImageCollection arranged and what does it contain? 
@@ -68,12 +68,12 @@ var s1VV_image = s1_image.select('VV');
 Map.addLayer(s1VV_image, {min: -25, max: 0, palette: ['black', 'white']}, 'Sentinel-1 VV image', false);
 ```
 
-Examine the printed Sentinel-1 VV image (Fig. 5). To get a better idea of the study area, you may also deselect the visualized layer (purple box in Fig. 5) and change the basemap to an optical satellite imagery – “Satellite” (orange box in Fig. 5). 
+Examine the printed Sentinel-1 VV image (Fig. 2). To get a better idea of the study area, you may also deselect the visualized layer (purple box in Fig. 2) and change the basemap to an optical satellite imagery – “Satellite” (orange box in Fig. 2). 
 
 The five main classes present in the study area are: __forest (F)__, __non-forest (NF)__, __plantation (P)__, __built-up (B)__ and __water (W)__. Here non-forest is predominantly open soil (logging roads or logged forest/plantation). 
 
 ![fig](/figures/figure_05.png)
-<sub>Figure 5. Sentinel-1 VV image for February 1st, 2020. </sub>
+<sub>Figure 2. Sentinel-1 VV image for February 1st, 2020. </sub>
 
 ### Task
 Now try to select the VH band of “s1_image” yourself and visualize it similar to the VV-image.
@@ -84,15 +84,15 @@ var s1VH_image = ??? ;
 
 Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', false);
 ```
-For a better understanding of the backscatter values for the five main classes you might check their specific values, by selecting the “_Inspector_” on the top right and then select a point with the mouse courser by clicking on the maps (Fig. 6).
+For a better understanding of the backscatter values for the five main classes you might check their specific values, by selecting the “_Inspector_” on the top right and then select a point with the mouse courser by clicking on the maps (Fig. 3).
 
 ![fig](/figures/figure_06.png)
-<sub>Figure 6. Inspector function to access values of plotted maps in GEE. </sub>
+<sub>Figure 3. Inspector function to access values of plotted maps in GEE. </sub>
 
-To describe a class specific backscatter characteristic, extract backscatter values for 10 pixels of homogeneous areas representing each of the five land cover classes via the GEE “_Inspector_”. Afterwards calculate the minimal value, the maximal value, the median and the standard deviation based on the 10 pixel for each class and fill it in a table (Example table 2.).
+To describe a class specific backscatter characteristic, extract backscatter values for 10 pixels of homogeneous areas representing each of the five land cover classes via the GEE “_Inspector_”. Afterwards calculate the minimal value, the maximal value, the median and the standard deviation based on the 10 pixel for each class and fill it in a table (Example table 1.).
 
 ![fig](/figures/table_01.PNG)
-<sub> Table 2. Sentinel-1 image modes at medium spatial resolution. VV - vertical transmit and vertical receive polarisation; VH - vertical transmit and horizontal receive polarisation. </sub>
+<sub> Table 1. Sentinel-1 image modes at medium spatial resolution. VV - vertical transmit and vertical receive polarisation; VH - vertical transmit and horizontal receive polarisation. </sub>
 
 ### Question
 __Question 3.1d:__ What differences do you see between the maps of the two polarizations?
@@ -108,7 +108,7 @@ __Question 3.1g:__ Assign for each of the five main classes the range of backsca
 To create a false colour RGB using a dual-polarised SAR image (two image layers only), the backscatter ratio is most commonly used as third image layer. In case of Sentinel-1, the “VVVH backscatter ratio” is calculated.
 In dB scale, the “VVVH backscatter ratio” is not calculated as a classical ratio (for example NDVI), but simply as VV backscatter - VH backscatter. (In linear scale, the “VVVH backscatter ratio” it is calculated as ratio: VV/VH).
 
-To calculate the “VVVH backscatter ratio” and visualize it (Fig. 7) you may use the following code. 
+To calculate the “VVVH backscatter ratio” and visualize it (Fig. 4) you may use the following code. 
 __Note__ that in order to successfully run this code you need to have defined the variable called _s1VH_image_ via the task from visualizing the VH band from before!
 
 ```java
@@ -119,7 +119,7 @@ Map.addLayer(s1VVVH_image, {min: 0, max: 10, palette: ['black', 'white']}, 'Sent
 ```
 
 ![fig](/figures/figure_07.png)
-<sub> Figure 7. VVVH backscatter ratio as grayscale for one Sentinel-1 image </sub>
+<sub> Figure 4. VVVH backscatter ratio as grayscale for one Sentinel-1 image </sub>
 
 For plotting a radar RGB in GEE we first need to add the newly calculated backscatter ratio to the initial Sentinel-1 image containing the VV- and VH-bands. Out of convenience we also clip the image to the desired aoi.
 
