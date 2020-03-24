@@ -2,7 +2,7 @@
 ## Visualisation
 ### For the entire practical: copy and paste all parts of the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the disered outcome.
 
-To start analysing Satellite Imagery in GEE you first have to sign up and login into GEE code editor. Once you have done that we can start by selecting an Area of Interest (aoi) and zooming to it.
+To start analysing Satellite Imagery in GEE you can select your Area of Interest (aoi) and zoom to it.
 
 ```java
 // Define a rectangular area of interest, by listing coordinates
@@ -15,7 +15,7 @@ var aoi = ee.Geometry.Polygon(
 // Zoom to this area of of interest
 Map.centerObject(aoi,10);
 ```
-In order to access the Sentinel-1 data in GEE you need to search the GEE catalogue of provided data and filter based on the desired aoi and date. Therefore you need to define a start and end date and several sensor metadata properties (eg: Instrument mode, orbit pass, etc.).
+In order to access the Sentinel-1 data in GEE you need to search the GEE catalogue of provided data and filter based on the desired aoi and date. Therefore you need to define a start and end date and several sensor metadata properties (eg: Instrument mode, orbit pass, etc.). Hereby various [sensor specifc parameters](https://developers.google.com/earth-engine/sentinel1) are possible to select.
 
 ```java
 // Define a start and end date for the analysis
