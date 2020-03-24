@@ -4,12 +4,15 @@ Question 3.1b: How many Images are in Entire collection of Sentinel-1 images?
 
 Question 3.1c: How many Images of this collection were acquired in March 2020?
 
+___
 Task
 Now try to select the VH band of “s1_image” yourself and visualize it. (Hint: Do it similar to the VV-polarization and fill out spaces of ??? in the code below)
 
 var s1VH_image = ??? ;
 
 Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', true);
+___
+
 Question 3.1d: What differences do you see between the maps of the two polarizations?
 
 Question 3.1e: Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)?
@@ -29,7 +32,7 @@ Question 3.1k: Why are plantations much greener in the RGB than regular forest?
 Analysing and describing class specific backscatter characteristics
 Analysing and describing the SAR backscatter is fundamental to build the link between the observed SAR backscatter values and the objects on the ground (trees, river ...). This will assist to answer the following type of questions: How did the differently polarised radar (VV vs. VH) waves interact with the objects on the ground to result in the observed VV and VH backscatter values? Which scatter mechanisms (surface, volume and/or double bounce scattering) did cause for example high VH values over forest? First, the backscatter characteristics of the five main classes are to be analysed and described: forest (F), non-forest (NF), plantation (P), built-up (B) and water (W). This is to be done individually for VV, VH and “VVVH backscatter ratio”.
 
-
+___
 
 
 
@@ -43,7 +46,7 @@ Task
 Create the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VH polarization. Follow the code from above and change if necessary.
 
 Question 3.2d: How does the RGB change for the VH-polarization instead of VV? Why are these areas different?
-
+___
 
 Question 3.3a: Visualize time series for the main five classes (forest, non-forest, plantation, water and built-up) and explain possible differences in VV- and VH-polarizations!
 
