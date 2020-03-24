@@ -20,12 +20,19 @@ Johannes Reiche, Bart Slagter & Johannes Balling
 ### Content
 
 1. Introduction
+   
    1.1. Study Area
+   
    1.2. Data
+   
 2. Google Earth Engine Introduction
+
 3. Google Earth Engine Exercises
+
    3.1. [Sentinel-1 visualisation and RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_1_Sentinel_1_Visualisation_and_RGB_generation.md)
+   
    3.2. [Sentinel-1 multitemporal RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_2_Sentinel_1_multitemporal_RGB_generation.md)
+   
    3.3. [Sentinel-1 time series analysis](https://github.com/jreiche/aeo_radar/blob/master/3_3_Sentinel_1_time_series_analysis.md)
 
 
