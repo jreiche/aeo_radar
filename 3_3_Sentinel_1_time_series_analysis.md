@@ -89,12 +89,12 @@ var s1_timeseries = function(){
 var button = ui.Button({label: 'View time series', onClick: s1_timeseries})
 print(button)
 ```
-![fig](/figure_11.png)
+![fig](/figures/figure_11.png)
 <sub>Figure 11. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization and highlighted steps necessary to create time series plots in GEE. </sub>
 
 If you want to create a new time series for a specific pixel __FIRST__ delete the current geometry (Fig. 12) and then start with the procedure mentioned above.
 
-![fig](/figure_12.png)
+![fig](/figures/figure_12.png)
 <sub>Figure 12. How to delete a created geometry in GEE. </sub>
 
 ### Question
