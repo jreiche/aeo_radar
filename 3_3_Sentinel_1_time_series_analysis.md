@@ -13,7 +13,7 @@ var aoi = ee.Geometry.Polygon(
           [103.2639683751258, 0.8283349585410177]]], null, false);
 
 // Zoom to this area of of interest
-Map.centerObject(aoi);
+Map.centerObject(aoi,10);
 
 // Define a start and end date for the analysis
 var start_monitoring = ee.Date('2018-01-01');
