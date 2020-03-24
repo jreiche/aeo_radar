@@ -1,9 +1,14 @@
-Question 3.1a: What is an ImageCollection and what does it contain?
+__Question 3.1a:__ What is an ImageCollection and what does it contain?
 
-Question 3.1b: How many Images are in Entire collection of Sentinel-1 images?
+* An ImageCollection is a stack or time series of images. Therefore it contains the Images themselves and important metadata of the sensor (e.g. acquisition mode etc.) and images (acquisition time etc.)
 
-Question 3.1c: How many Images of this collection were acquired in March 2020?
+__Question 3.1b:__ How many Images are in Entire collection of Sentinel-1 images?
 
+* 11 images
+
+__Question 3.1c:__ How many Images of this collection were acquired in March 2020?
+
+* 5 Images (2x 01-03-2020; 1x 08-03-2020; 2x 13-03-2020)
 ___
 Task
 Now try to select the VH band of “s1_image” yourself and visualize it. (Hint: Do it similar to the VV-polarization and fill out spaces of ??? in the code below)
