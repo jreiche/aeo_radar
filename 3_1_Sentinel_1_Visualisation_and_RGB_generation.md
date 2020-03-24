@@ -88,12 +88,12 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 > __Question 3.1e:__ Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)? 
 > ___
 
-TO understand the relationship of for the five main classes and the different Sentinel-1 polarizations you can check their specific backscatter values, by selecting the “_Inspector_” on the top right in GEE (Fig. 3). Then select a pixel with the mouse courser by simply clicking on the map (Fig. 3).
+Check the relationship of the five main land cover classes and the different Sentinel-1 polarizations backscatter values by selecting the “_Inspector_” on the top right in GEE (Fig. 3). Then select a pixel with the mouse courser by simply clicking on the map (Fig. 3).
 
 ![fig](/figures/figure_06.png)
 <sub>Figure 3. Inspector function to access values of plotted maps in GEE. </sub>
 
-To describe a class specific backscatter characteristic, extract backscatter values for 10 pixels representing each of the five land cover classes via the GEE “_Inspector_”. Afterwards calculate the minimal value, the maximal value, the median and the standard deviation based on the 10 pixel for each class and fill it in a table (Example table 1.).
+Extract backscatter values for 10 pixels representing each of the five land cover classes via the GEE “_Inspector_” to describe class specific backscatter characteristics. Afterwards calculate the minimal value, the maximal value, the median and the standard deviation based on the 10 pixel for each class and fill it in a table (Example table 1.).
 
 ![fig](/figures/table_01.PNG)
 <sub> Table 1. Structure of the backscatter values for VV- and VH-polarization for the five main land cover classes </sub>
