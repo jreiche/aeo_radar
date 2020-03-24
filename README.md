@@ -34,12 +34,12 @@ Johannes Reiche, Bart Slagter & Johannes Balling
 ## 1.1 Study area
 The study area is located in the province of Riau (Indonesia). Riau is located on the east coast of central Sumatra and experiences tropical equatorial climate. This climate is causing a persistent cloud cover throughout the entire year. Primary and secondary dryland and swamp and mangrove forest dominate the natural forest. Riau has the highest forest-cover-loss rates in Indonesia (Margono et al 2014) mainly driven by expansion and conversion to acacia, coconut, rubber plantations and oil palm (Fig.1) (Uryu et al 2008). Oil palm, representing the largest plantation area by species and cover about 3.08 Mha (~34) of all land area (Fig.1) (GlobalForestWatch).
 
-![fig](/figure_01.png)
+![fig](/figures/figure_01.png)
 <sub>Figure 1. Forest conversion and oil palm plantation in Riau (Indonesia) </sub>
 
 The study area extends approximately 80 x 60 km (0°24’ N; 102°40’ E) and is part of the Pelalawan regency with several plantations and peatlands. The later are diminishing in their quantity due to drainage for land conversion and make them more sensible to fires. Although forbidden by law, fire use for forest removal is still wide-spread in Riau (Gaveau et al 2014). These fire activities are man-made and can be traced back to fire-related land management practices on forest plantations and can spread to natural forest. These impacts are visible in Sar images (Fig. 2).
 
-![fig](/figure_02.png)
+![fig](/figures/figure_02.png)
 <sub>Figure 2. Sentinel-1 RGB (Red: VV-VH, Green: VH, Blue: VV) (left) of an area in Riau and the corresponding photos of the land cover (right – top: water body; middle: secondary peatland forest; plantation logging and secondary peatland forest) </sub>
 
 ## 1.2 Data
@@ -59,7 +59,7 @@ Note that the rest of the videos are not mandatory for this practical, but give 
 ### Creating and accessing your GEE account
 To start working in GEE you first need to sign up, if you have not done so beforehand. Please visit the following [website](https://earthengine.google.com/) to do so and click on the sign-up button on the top of the page (Fig. 3). After filling in all required information, the confirmation for your GEE account might take up to three days according to the website (usually its done in a matter of hours).
 
-![fig](/figure_03.png)
+![fig](/figures/figure_03.png)
 <sub>Figure 3. GEE website - for using GEE, please sign-up on the top right (red box). </sub>
 
 After signing up to GEE you are ready to login and analyse satellite data via the GEE code editor (Please watch the videos mentioned above to understand the structure of the GEE code editor). 
