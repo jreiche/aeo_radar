@@ -101,7 +101,7 @@ Extract backscatter values for 10 pixels representing each of the five land cove
 > ___
 > ### Question
 > 
-> __Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B)? Which class shows the lowest and highest values?
+> __Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B) for VV-polarization? Which class shows the lowest and highest values?
 > 
 > __Question 3.1g:__ What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?
 > ___
