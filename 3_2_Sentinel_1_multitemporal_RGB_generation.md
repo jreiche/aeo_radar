@@ -95,7 +95,7 @@ In order to check the visual parameters (what band is the red channel, etc) you 
 <sub>Figure 10. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization. </sub>
 
 ___
-### Question
+> ### Question
 >__Question 3.2a:__ What areas show the most change and why is that? What main class is showing the most change?
 >
 >__Question 3.2b:__ What do the different colours of the map show us (e.g. What do blue, red and yellow patches indicate?)? 
