@@ -37,7 +37,11 @@ __Question 3.1f:__ What are significant differences in the calculated median and
 <sub> Table of values for the five different land cover classes for both polarizations </sub>
 
 
-Question 3.1g: What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?
+__Question 3.1g:__ What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?
+* Water due to very low values (insert value range) easy to separate for both polarizations
+* Built-up due to high values (insert value range) easy to separate for both polarizations
+* 
+
 
 Question 3.1h: What differences do you see in the ratio band compared to the single VV and VH bands and which classes are visually good to separate?
 
