@@ -141,6 +141,7 @@ __Question 3.3a:__ Visualize time series for the main five classes (forest, non-
 ![fig](/answers/answer_sheet_water_ts.PNG)
 <sub> Water ts </sub>
 
+* for description of the time series and the behaivour of VV and VH check answer from __Question 3.1g__
 
 __Question 3.3b:__ Which scatter mechanism(s) cause the high VH backscatter over forest (F) when compared to non-forest (NF) areas? Briefly explain the mechanism(s).
 * Maybe just use the answer from the answer sheet of the initial AEO as this question is directly out of there
