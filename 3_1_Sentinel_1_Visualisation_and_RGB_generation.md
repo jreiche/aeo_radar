@@ -28,14 +28,13 @@ var s1_collection = ee.ImageCollection('COPERNICUS/S1_GRD')
   .filter(ee.Filter.eq('orbitProperties_pass', 'DESCENDING'))
   .filterDate(ee.Date(start_monitoring), ee.Date(end_monitoring))
   .filterBounds(aoi);
+  
+ // Print the image collection to the console
+print('Entire collection of Sentinel-1 images: ', s1_collection);
 ```
 
 To get a better understanding of GEE and the data structure look at the ImageCollection “Entire collection of Sentinel-1 images”. This ImageCollection should be printed in the console on the top right after running the script (Fig. 1).
 
-```java
-// Print the image collection to the console
-print('Entire collection of Sentinel-1 images: ', s1_collection);
-```
 ![fig](/figures/figure_04.png)
 <sub>Figure 1. Sentinel-1 ImageCollection in the console of GEE. </sub>
 
