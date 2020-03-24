@@ -4,7 +4,6 @@
 Johannes Reiche, Bart Slagter & Johannes Balling
 23-03-2020
 
-
 ### Requirements
 * Software
   * Google Earth Engine (GEE)
@@ -13,8 +12,8 @@ Johannes Reiche, Bart Slagter & Johannes Balling
 
 ### Learning goals
 * Introduction to GEE
-* Visualisation and RGB generation of Sentinel-1 images
-* Basic time series analysis of Sentinel-1 images
+* Visualisation and RGB generation of Sentinel-1 images in GEE
+* Basic time series analysis of Sentinel-1 images in GEE
 * Understanding basic SAR backscatter characteristics (VV and VH backscatter values and distributions) over different land cover (forest, plantation, non-forest, built-up and water)
 * Linking the backscatter characteristics to particular scatter mechanism on the ground (surface, volume and double bounce scattering). Understanding interactions of the radar wave with objects on the ground (tree, water ...).
 
@@ -45,7 +44,7 @@ The study area is located in the province of Riau (Indonesia). Riau is located o
 ![fig](/figures/figure_01.png)
 <sub>Figure 1. Forest conversion (left) and oil palm plantation (right) in Riau (Indonesia) </sub>
 
-The study area extends approximately 80 x 60 km (0°24’ N; 102°40’ E) and is part of the Pelalawan regency with several plantations and peatlands. The later are diminishing in their quantity due to drainage for land conversion and make them more sensible to fires. Although forbidden by law, fire use for forest removal is still wide-spread in Riau [(Gaveau et al 2014)](https://www.nature.com/articles/srep06112). These fire activities are man-made and can be traced back to fire-related land management practices on forest plantations and can spread to natural forest [(Reiche et al 2018)](https://www.mdpi.com/2072-4292/10/5/777). These impacts are visible in Sar images (Fig. 2).
+The study area extends approximately 80 x 60 km (0°24’ N; 102°40’ E) and is part of the Pelalawan regency with several plantations and peatlands. The later are diminishing in their quantity due to drainage for land conversion and make them more sensible to fires. Although forbidden by law, fire use for forest removal is still wide-spread in Riau [(Gaveau et al 2014)](https://www.nature.com/articles/srep06112). These fire activities are man-made and can be traced back to fire-related land management practices on forest plantations and can spread to natural forest [(Reiche et al 2018)](https://www.mdpi.com/2072-4292/10/5/777). These fire impacts and logging activities are visible in Sentinel-1 images (Fig. 2).
 
 ![fig](/figures/figure_02.png)
 <sub>Figure 2. Sentinel-1 RGB (Red: VV-VH, Green: VH, Blue: VV) (left) of an area in Riau and the corresponding photos of the land cover (right – top: water body; middle: secondary peatland forest; plantation logging and secondary peatland forest) </sub>
@@ -55,23 +54,23 @@ The Sentinel-1 mission comprises a constellation of two polar-orbiting satellite
 
 # 2. Introduction to Google Earth Engine
 Google Earth Engine (GEE) provides vast amounts of satellite imagery and geospatial datasets ready to use for researcher, scientists and developers. Satellite images include ESA’s Sentinel missions providing both dense optical [(Sentinel-2)](https://developers.google.com/earth-engine/datasets/catalog/sentinel-2) and radar [(Sentinel-1)](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD) data streams. These data streams can be directly processed on Googles servers making it a fast and convenient tool to analyse remote sensing data.
-For a brief introduction to capabilities of GEE you may watch the videos of this [playlist.](https://www.youtube.com/playlist?list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs)
-* [A short general introduction of what GEE is and what you can do with it.](https://www.youtube.com/watch?v=W2V_awzKDOg&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=2&t=0s)
+For a brief introduction to capabilities of GEE you may watch the videos of this [playlist.](https://www.youtube.com/playlist?list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs). Nessecary videos of this playlist are:
+* [General introduction of GEE](https://www.youtube.com/watch?v=W2V_awzKDOg&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=2&t=0s)
 * [Difference between a server and a client.](https://www.youtube.com/watch?v=Tas0c4e_E0M&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=3&t=0s) It is important to notice that GEE is as server based platform and certain operations that you are used to carry out in R or other programming software are either not working or not advisable.
 * [General functions on filtering and displaying data in GEE.](https://www.youtube.com/watch?v=4w6Mt6HTC2I&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=4&t=0s)
 
 Note that the rest of the videos are not mandatory for this practical, but give a more in depth view on possibilities in GEE.
 
 ### Creating and accessing your GEE account
-To start working in GEE you first need to sign up, if you have not done so beforehand. Please visit the following [website](https://earthengine.google.com/) to do so and click on the sign-up button on the top of the page (Fig. 3). After filling in all required information, the confirmation for your GEE account might take up to three days according to the website (usually its done in a matter of hours).
+To start working in GEE you first need to sign up, if you have not done so beforehand. Please visit the following [website](https://earthengine.google.com/) and click on the sign-up button on the top of the page (Fig. 3). After filling in all required information, the confirmation for your GEE account might take up to three days according to the website (usually its done in a matter of hours).
 
 ![fig](/figures/figure_03.png)
 <sub>Figure 3. GEE website - for using GEE, please sign-up on the top right (red box). </sub>
 
-After signing up to GEE you are ready to login and analyse satellite data via the [GEE code editor](https://code.earthengine.google.com/) (Please watch the videos mentioned above to understand the structure of the GEE code editor). 
+After that you are ready to login and analyse satellite data via the [GEE code editor](https://code.earthengine.google.com/) (Please watch the videos mentioned above to understand the structure of the GEE code editor). 
 
 # 3. Google Earth Engine Exercises
-Please click on the different _.md_ files of the pratical and follow the instructions and tasks within them. It is important to carry out the different parts in the intended order of:
+Please click on the different _.md_ files given in this github project and follow the instructions and tasks within them. It is important to carry out the different parts in the intended order of:
 
 3.1. [Sentinel-1 visualisation and RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_1_Sentinel_1_Visualisation_and_RGB_generation.md)
 
