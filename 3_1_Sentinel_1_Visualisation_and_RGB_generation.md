@@ -40,7 +40,7 @@ print('Entire collection of Sentinel-1 images: ', s1_collection);
 ![fig](/figures/figure_04.png)
 <sub>Figure 1. Sentinel-1 ImageCollection in the console of GEE. </sub>
 
-### Question
+## Question
 __Question 3.1a:__ How is the ImageCollection arranged and what does it contain? 
 
 __Question 3.1b:__ How many Images are in this Collection?
@@ -75,7 +75,7 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 ![fig](/figures/figure_05.png)
 <sub>Figure 2. Sentinel-1 VV image for February 1st, 2020. </sub>
 
-### Task
+## Task
 Now try to select the VH band of “s1_image” yourself and visualize it similar to the VV-image.
 (Hint: Do it similar to the VV-polarization and fill out spaces of __???__ in the code below)
 
@@ -94,7 +94,7 @@ To describe a class specific backscatter characteristic, extract backscatter val
 ![fig](/figures/table_01.PNG)
 <sub> Table 1. Sentinel-1 image modes at medium spatial resolution. VV - vertical transmit and vertical receive polarisation; VH - vertical transmit and horizontal receive polarisation. </sub>
 
-### Question
+## Question
 __Question 3.1d:__ What differences do you see between the maps of the two polarizations?
 
 __Question 3.1e:__ Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)? 
@@ -142,7 +142,7 @@ var visualisation_params = {
 Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', false)
 ```
 
-### Question
+## Question
 __Question 3.1h:__ What differences do you see in the ratio band compared to the single VV and VH bands and which classes are visually especially good separately?
 
 __Question 3.1i:__ Which colours represent the five main land cover classes in the RGB and why?
