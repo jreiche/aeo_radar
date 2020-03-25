@@ -1,9 +1,9 @@
 # E.2 Sentinel-1 multitemporal RGB generation
 #### Instruction: copy and paste the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the desired outcome.
 
-This part of the practical will give you a short overview on how to generate median values for each pixel over a set period of time for one Sentinel-1 polarization and then plot these as an RGB.
+This exercise introduces the calculation of median values for each pixel over a set period of time for one Sentinel-1 polarization. This is carried out for several timestamp allowing for the generation of a Sentinel-1 multitemporal RGB. 
 
-The following code is creating an aoi, searches the Sentinel-1 catalogue within GEE based on dates and instrument metadata and prints the _ImageCollection_.
+### 1. Access Sentinel-1 image collection
 
 ```java
 // Define a rectangular area of interest, by listing coordinates
@@ -35,7 +35,8 @@ Check the entire ImageCollection via the output in the console (Fig. 1).
 ![fig](/figures/figure_08.png)
 <sub>Figure 1. ImageCollection of the Sentinel-1 catalogue for the desired aoi from 2018 – 2020/04. </sub>
 
-We are left with 192 single images and need to reduce the data quantity in order to create a meaningful multitemporal RGB. 
+### 2. Median calculation for an image collection
+This collection contains 192 single images and needs to reduced in order to create a meaningful multitemporal RGB. 
 First calculate medians for each pixel and each band in the Sentinel-1 ImageCollection for the first quantiles of the years 2018, 2019 and 2020.
 
 ```java
@@ -44,9 +45,10 @@ var s1_median_2018Q1 = s1_collection.filterDate('2018-01-01','2018-04-01').media
 var s1_median_2019Q1 = s1_collection.filterDate('2019-01-01','2019-04-01').median();
 var s1_median_2020Q1 = s1_collection.filterDate('2020-01-01','2020-04-01').median();
 ```
-Feel free to print the results and look at the output in the console (e.g. via: _print('s1_median_2018Q1:',s1_median_2018Q1)_). 
-As you see the median was calculated for each band separately. 
-Now select the VV polarization and rename the band to better localize it later. Afterwards merge all single VV bands of the median composites in one multiband Image.
+Print the results and look at the output in the console (e.g. via: _print('s1_median_2018Q1:',s1_median_2018Q1)_). 
+
+### 3. Multitemporal Senintel-1 image
+Select the VV polarization and rename the band to better localize it later. Afterwards merge all single VV backscatter images of the median composites in one multiband Image.
 
 ```java
 // Select from each median composite the VV polarisation and rename this corresponding to the time period
@@ -65,7 +67,9 @@ Look at the printed result of the multiband image containing the first quantile 
 ![fig](/figures/figure_09.png)
 <sub>Figure 2. Multiband image of the first quantile median composites of 2018, 2019 and 2020. </sub>
 
-All that is left to do is to clip the result to the desired aoi and visualize the RGB based on various parameters.
+### 4. Visualization of multitemporal RGB
+
+Clip the multiband image to the desired aoi and visualize the RGB.
 
 ```java
 // Clip the newly created image to the area of interest
@@ -84,7 +88,7 @@ Map.addLayer(s1VV_multitemporal, visualisation_params, 'Sentinel-1 multitemporal
 ```
 
 The multitemporal RGB shows various changes throughout the aoi (Fig 3.). 
-In order to check the visual parameters (what band is the red channel, etc) you may adjust and check them in the map layout of GEE (Top right of Fig 3.).
+To check the visual parameters (what band is the red channel, etc) one may adjust and check them directly in the map layout of GEE (Top right of Fig 3.).
 
 ![fig](/figures/figure_10.png)
 <sub>Figure 3. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization. </sub>
