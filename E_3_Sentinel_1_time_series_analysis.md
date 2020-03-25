@@ -3,7 +3,7 @@
 
 This exercise shows how to create Sentinel-1 time series plots.
 
-### 1. Creating multitemporal RGB for indicating areas of change
+### 1. Multitemporal RGB for indicating areas of change
 
 ```java
 // Define a rectangular area of interest, by listing coordinates
@@ -61,7 +61,7 @@ var visualisation_params = {
 Map.addLayer(s1VV_multitemporal, visualisation_params, 'Sentinel-1 multitemporal composite RGB')
 ```
 
-### 2. Createing time series plots for Sentinel-1 VV and VH
+### 2. Time series plots for Sentinel-1 VV and VH
 
 Please insert the code and follow the steps visualized in figure 1. 
 
