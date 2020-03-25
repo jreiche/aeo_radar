@@ -92,7 +92,8 @@ In order to check the visual parameters (what band is the red channel, etc) you 
 > ___
 >#### *Question 3.2a: What areas show the most change? Is the change equally distributed for all land cover classes?*
 >
->#### *Question 3.2b: What do the different colours of the map indicate (e.g.blue, red and yellow patches?)?* 
+>#### *Question 3.2b:* 
+> *What do the different colours of the map indicate (e.g.blue, red and yellow patches?)?* 
 >
 >#### *Question 3.2c:* 
 > Why are some areas along the shoreline in a different colour?
