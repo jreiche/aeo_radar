@@ -1,8 +1,8 @@
 # 3.1	Sentinel-1 visualisation and RGB generation
 ## Visualisation
-### For the entire practical: copy and paste all parts of the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the disered outcome.
+### For the entire practical: copy and paste all parts of the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the desired outcome.
 
-To start analysing Satellite Imagery in GEE you can select your Area of Interest (aoi) and zoom to it.
+1. Select your Area of Interest (aoi) and zoom to it.
 
 ```java
 // Define a rectangular area of interest, by listing coordinates
