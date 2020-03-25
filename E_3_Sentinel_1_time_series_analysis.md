@@ -1,8 +1,9 @@
 ## E.3 Sentinel-1 time series analysis in GEE
 #### Instruction: copy and paste the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the desired outcome.
 
-This part of the practical shows how to create Sentinel-1 time series plots.
-The first part of the following code creates an multitemporal RGB for the first quantiles of 2018, 2019 and 2020. The RGB will play a role for visualizing and pointing out interesting areas for the time series analysis later on.
+This exercise shows how to create Sentinel-1 time series plots.
+
+### 1. Creating multitemporal RGB for indicating areas of change
 
 ```java
 // Define a rectangular area of interest, by listing coordinates
@@ -60,7 +61,7 @@ var visualisation_params = {
 Map.addLayer(s1VV_multitemporal, visualisation_params, 'Sentinel-1 multitemporal composite RGB')
 ```
 
-This second part of the script is enabling to plot time series for Sentinel-1 VV and Seintel-1 VH. Please insert the code and follow the steps visualized in figure 1. 
+This follwing script creates time series plots for Sentinel-1 VV and Seintel-1 VH. Please insert the code and follow the steps visualized in figure 1. 
 
 ```java
 // Code below is used to view a Sentinel-1 time series on a clicked point
@@ -94,7 +95,7 @@ print(button)
 ![fig](/figures/figure_11.png)
 <sub>Figure 1. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization and highlighted steps necessary to create time series plots in GEE. </sub>
 
-If you want to create a new time series for a specific pixel __FIRST__ delete the current geometry (Fig. 2) and then start with the procedure mentioned above.
+For creating a new time series for a specific pixel __FIRST__ delete the current geometry (Fig. 2) and then start with the procedure mentioned above.
 
 ![fig](/figures/figure_12.png)
 <sub>Figure 2. How to delete a created geometry in GEE. </sub>
