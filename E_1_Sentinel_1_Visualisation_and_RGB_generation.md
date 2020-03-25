@@ -105,7 +105,7 @@ Polarization            | *VV*            |*VH*   |       *VV*            | *VH*
 Pixel 1                 |                 |       |                       |       |                 |    |         |    |     |    |
 ...                     |                 |       |                       |       |                 |    |         |    |     |    |
 Pixel 5                 |                 |       |                       |       |                 |    |         |    |     |    |
-    Mean                |                 |       |                       |       |                 |    |         |    |     |    |
+Mean                |                 |       |                       |       |                 |    |         |    |     |    |
 
 > ___
 > #### Question E.1-5: 
