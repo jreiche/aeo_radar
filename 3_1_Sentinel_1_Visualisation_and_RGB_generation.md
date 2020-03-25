@@ -39,9 +39,8 @@ To get a better understanding of GEE and its data structure look at the [ImageCo
 ![fig](/figures/figure_04.png)
 <sub>Figure 1. Sentinel-1 ImageCollection in the console of GEE. </sub>
 
- #### *Question*
- ##### *__Question E1-1:__ How many Sentinel-1 images does the selected image collection contain?*
- ##### *__Question E1-2:__ How many Images of this collection were acquired in March 2020?*
+ #### *Question E1-1:__ How many Sentinel-1 images does the selected image collection contain?*
+ #### *Question E1-2:__ How many Images of this collection were acquired in March 2020?*
 > ___
 > ### Question
 >  __Question E1-1:__ How many Sentinel-1 images does the selected image collection contain?
