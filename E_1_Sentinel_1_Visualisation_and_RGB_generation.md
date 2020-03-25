@@ -72,7 +72,7 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 <sub>Figure 2. Sentinel-1 VV image for February 1st, 2020. </sub>
 
 > ___
-> ### Task
+> #### Task
 > Select the VH backscatter band of “s1_image” and visualize it.
 >
 > ```java
@@ -80,9 +80,9 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 > 
 > Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', true);
 > ```
-> __Question 3.1d:__ What differences do you see between the maps of the two polarizations?
+> #### *Question E.1-3: What differences do you see between the maps of the two polarizations?
 > 
-> __Question 3.1e:__ Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)? 
+> #### *Question E.1-4: Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)? 
 > ___
 
 Check the relationship of the five main land cover classes and the different Sentinel-1 polarizations backscatter values by selecting the “_Inspector_” on the top right in GEE (Fig. 3). Then select a pixel with the mouse courser by simply clicking on the map (Fig. 3).
@@ -96,11 +96,9 @@ Extract backscatter values for 10 pixels representing each of the five land cove
 <sub> Table 1. Structure of the backscatter values for VV- and VH-polarization for the five main land cover classes </sub>
 
 > ___
-> ### Question
+> #### *Question E.1-5: What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B) for VV-polarization? Which class shows the lowest and highest backscatter values?
 > 
-> __Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B) for VV-polarization? Which class shows the lowest and highest backscatter values?
-> 
-> __Question 3.1g:__ What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?
+> #### *Question E.1-6:__ What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?
 > ___
 
 #### 4. Calculating “VV-VH backscatter ratio” and RGB composite creation
@@ -144,16 +142,11 @@ var visualisation_params = {
 Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', true)
 ```
 > ___
-> ### Question
-> __Question 3.1h:__ What differences do you see in the VV-VH backscatter ratio band compared to the single VV and VH bands and which classes are visually good to separate?
+> #### *Question E.1-7: What differences do you see in the VV-VH backscatter ratio band compared to the single VV and VH bands and which classes are visually good to separate?
 >
-> __Question 3.1i:__ Which colours represent the five main land cover classes in the RGB?
+> #### *Question E.1-8: Which colours represent the five main land cover classes in the RGB?
 >
->__Question 3.1j:__ Why does water (W) appear black in the RGB? What happens to the radar wave when interacting with a flat (non-rough) water surface? It is helpful to make a sketch including the side-looking radar.
+> #### *Question E.1-9: Why does water (W) appear black in the RGB? What happens to the radar wave when interacting with a flat (non-rough) water surface? It is helpful to make a sketch including the side-looking radar.
 >
->__Question 3.1k:__ Why are plantations much greener in the RGB than regular forest?
+> #### *Question E.1-10: Why are plantations much greener in the RGB than regular forest?
 > ___
-
-## Analysing and describing class specific backscatter characteristics
-Analysing and describing the SAR backscatter is fundamental to build the link between the observed SAR backscatter values and the objects on the ground (trees, river ...). This will assist to answer the following type of questions: How did the differently polarised radar (VV vs. VH) waves interact with the objects on the ground to result in the observed VV and VH backscatter values? Which scatter mechanisms (surface, volume and/or double bounce scattering) did cause for example high VH values over forest? 
-First, the backscatter characteristics of the five main classes are to be analysed and described: forest (F), non-forest (NF), plantation (P), built-up (B) and water (W). This is to be done individually for VV, VH and “VVVH backscatter ratio”. 
