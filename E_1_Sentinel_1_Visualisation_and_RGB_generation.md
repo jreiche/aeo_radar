@@ -99,17 +99,13 @@ Extract backscatter values for a number of pixels (eg. 5 - 10) representing each
 
 <sub> Table 1. Structure of the backscatter values for VV- and VH-polarization for the five main land cover classes </sub>
 
-Land cover class        | Forest          |       |     Non-forest        |       | Plantation      |    | Built-up|    |Water|    |
+__Land cover class__        | __Forest__          |       |     __Non-forest__        |       | __Plantation__      |    | __Built-up__|    |__Water__|    |
 ------------------------|-----------------|-------|-----------------------|-------|-----------------|----|---------|----|-----|----|
 Polarization            | *VV*            |*VH*   |       *VV*            | *VH*  |*VH*             |*VH*|*VH*     |*VH*|*VH* |*VH*|
 Pixel 1                 |                 |       |                       |       |                 |    |         |    |     |    |
 ...                     |                 |       |                       |       |                 |    |         |    |     |    |
 Pixel 5                 |                 |       |                       |       |                 |    |         |    |     |    |
-####Mean                |                 |       |                       |       |                 |    |         |    |     |    |
-
-
-![fig](/figures/table_01.PNG)
-
+    Mean                |                 |       |                       |       |                 |    |         |    |     |    |
 
 > ___
 > #### Question E.1-5: 
