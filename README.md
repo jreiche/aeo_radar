@@ -51,7 +51,7 @@ To start working in GEE the user needs to sign up (if not done beforehand). Plea
 With an account you can login via the [GEE code editor](https://code.earthengine.google.com/) and start coding (Watch the videos mentioned above to understand the structure of the GEE code editor). 
 
 
-# 2. Sentinel-1 SAR data
+# 2. Sentinel-1 radar data
 The Sentinel-1 mission comprises a constellation of two polar-orbiting satellites, operating day and night performing C-band synthetic aperture radar imaging, enabling them to acquire imagery regardless of the weather. This C-band radar satellite provides - depending on the acquisition mode - co- and cross-polarization, a spatial resolution of 10 m and a temporal resolution of up to [6 days in the tropics](https://sentinel.esa.int/web/sentinel/missions/sentinel-1/observation-scenario). In this practical we will use [Ground Range Detected](https://sentinel.esa.int/web/sentinel/user-guides/sentinel-1-sar/resolutions/level-1-ground-range-detected) (GRD) products. GRD products consists of focused SAR data that has been detected, multi-looked and projected to ground range using an Earth ellipsoid model. Phase information is lost. However, the polarization information is kept in single co-polarization (VV) or dual-band cross-polarization (VV + VH) depending on the instrument's polarization settings. Following pre-processing steps were applied to [GRD data within GEE](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD) (as implemented in the [Sentinel-1 toolbox](https://sentinel.esa.int/web/sentinel/toolboxes/sentinel-1)):
 * Apply orbit file
   * Updates orbit metadata with a restituted orbit file.
@@ -81,8 +81,8 @@ The study area extends approximately 80 x 60 km (0°24’ N; 102°40’ E) and i
 # 4. Google Earth Engine Exercises
 Please click on the different _.md_ files given in this github project and follow the instructions and tasks within them. It is important to carry out the different parts in the intended order of:
 
-4.1. [Sentinel-1 visualisation and RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_1_Sentinel_1_Visualisation_and_RGB_generation.md)
+E.1. [Sentinel-1 visualisation and RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_1_Sentinel_1_Visualisation_and_RGB_generation.md)
 
-4.2. [Sentinel-1 multitemporal RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_2_Sentinel_1_multitemporal_RGB_generation.md)
+E.2. [Sentinel-1 multitemporal RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_2_Sentinel_1_multitemporal_RGB_generation.md)
 
-4.3. [Sentinel-1 time series analysis](https://github.com/jreiche/aeo_radar/blob/master/3_3_Sentinel_1_time_series_analysis.md)
+E.3. [Sentinel-1 time series analysis](https://github.com/jreiche/aeo_radar/blob/master/3_3_Sentinel_1_time_series_analysis.md)
