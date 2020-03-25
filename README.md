@@ -8,7 +8,7 @@ Johannes Reiche, Bart Slagter & Johannes Balling
 * Software
   * Google Earth Engine (GEE)
 * Dataset provided via GEE
-  * Sentinel-1
+  * Sentinel-1 SAR
 
 ### Learning goals
 * Introduction to GEE
