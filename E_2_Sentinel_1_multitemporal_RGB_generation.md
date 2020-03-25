@@ -1,5 +1,5 @@
 # E.2 Sentinel-1 multitemporal RGB generation
-### For the entire practical: copy and paste all parts of the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the disered outcome.
+#### Instruction: copy and paste the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the desired outcome.
 
 This part of the practical will give you a short overview on how to generate median values for each pixel over a set period of time for one Sentinel-1 polarization and then plot these as an RGB.
 
