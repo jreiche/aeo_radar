@@ -1,7 +1,7 @@
 # 3.3 Sentinel-1 time series analysis in GEE
 ### For the entire practical: copy and paste all parts of the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the disered outcome.
 
-This part of the practical shows how to create time series plots based on Sentinel-1 data in GEE.
+This part of the practical shows how to create Sentinel-1 time series plots.
 The first part of the following code creates an multitemporal RGB for the first quantiles of 2018, 2019 and 2020. The RGB will play a role for visualizing and pointing out interesting areas for the time series analysis later on.
 
 ```java
