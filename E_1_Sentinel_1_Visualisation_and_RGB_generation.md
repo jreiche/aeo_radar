@@ -128,7 +128,7 @@ Map.addLayer(s1VVVH_image, {min: 0, max: 10, palette: ['black', 'white']}, 'Sent
 
 #### 5. Plot the Sentinel-1 radar RGB
 
-For plotting a radar RGB in GEE first add the newly calculated backscatter ratio to the initial Sentinel-1 image containing the VV- and VH-bands. Afterwards clip the image to the desired aoi.
+For plotting a radar RGB in GEE first add the newly calculated backscatter ratio to the initial Sentinel-1 image containing the VV- and VH-backscatter images. Afterwards clip the image to the desired aoi.
 
 ```java
 // Add the backscatter ratio to the initial Sentinel-1 image
