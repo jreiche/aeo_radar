@@ -90,18 +90,19 @@ In order to check the visual parameters (what band is the red channel, etc) you 
 <sub>Figure 3. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization. </sub>
 
 > ___
->#### *Question 3.2a: What areas show the most change? Is the change equally distributed for all land cover classes?*
+>#### Question 3.2a: 
+> *What areas show the most change? Is the change equally distributed for all land cover classes?*
 >
->#### *Question 3.2b:* 
+>#### Question 3.2b: 
 > *What do the different colours of the map indicate (e.g.blue, red and yellow patches?)?* 
 >
->#### *Question 3.2c:* 
-> Why are some areas along the shoreline in a different colour?
+>#### Question 3.2c:
+> *Why are some areas along the shoreline in a different colour?*
 > ___
 > ___
 > #### Task
 > Create the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VH polarization. Follow the code from above and change if necessary.
 >
-> #### *Question 3.2d:* 
-> How does the RGB change for the VH-polarization instead of VV? Why are these areas different?
+> #### Question 3.2d: 
+> *How does the RGB change for the VH-polarization instead of VV? Why are these areas different?*
 > ___
