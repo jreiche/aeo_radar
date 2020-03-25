@@ -3,6 +3,7 @@
 
 This exercise introduces the calculation of median values for each pixel over a set period of time for one Sentinel-1 polarization. This is carried out for several timestamp allowing for the generation of a Sentinel-1 multitemporal RGB. 
 
+
 ### 1. Access Sentinel-1 image collection
 
 ```java
@@ -35,6 +36,7 @@ Check the entire ImageCollection via the output in the console (Fig. 1).
 ![fig](/figures/figure_08.png)
 <sub>Figure 1. ImageCollection of the Sentinel-1 catalogue for the desired aoi from 2018 – 2020/04. </sub>
 
+
 ### 2. Median calculation for an image collection
 This collection contains 192 single images and needs to reduced in order to create a meaningful multitemporal RGB. 
 First calculate medians for each pixel and each band in the Sentinel-1 ImageCollection for the first quantiles of the years 2018, 2019 and 2020.
@@ -46,6 +48,7 @@ var s1_median_2019Q1 = s1_collection.filterDate('2019-01-01','2019-04-01').media
 var s1_median_2020Q1 = s1_collection.filterDate('2020-01-01','2020-04-01').median();
 ```
 Print the results and look at the output in the console (e.g. via: _print('s1_median_2018Q1:',s1_median_2018Q1)_). 
+
 
 ### 3. Multitemporal Senintel-1 image
 Select the VV polarization and rename the band to better localize it later. Afterwards merge all single VV backscatter images of the median composites in one multiband Image.
@@ -67,7 +70,8 @@ Look at the printed result of the multiband image containing the first quantile 
 ![fig](/figures/figure_09.png)
 <sub>Figure 2. Multiband image of the first quantile median composites of 2018, 2019 and 2020. </sub>
 
-### 4. Visualization of multitemporal RGB
+
+### 4. Visualization of a multitemporal RGB
 
 Clip the multiband image to the desired aoi and visualize the RGB.
 
@@ -92,6 +96,7 @@ To check the visual parameters (what band is the red channel, etc) one may adjus
 
 ![fig](/figures/figure_10.png)
 <sub>Figure 3. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization. </sub>
+
 
 > ___
 >#### Question 3.2a: 
