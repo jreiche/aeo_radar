@@ -88,16 +88,16 @@ var s1_timeseries = function(){
 var button = ui.Button({label: 'View time series', onClick: s1_timeseries})
 print(button)
 ```
+![fig](/figures/figure_11.png)
+<sub>Figure 1. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization and highlighted steps necessary to create time series plots in GEE. </sub>
+
 1.	select a geometry point option by clicking on the label 
 2.	create a point by clicking on the desired pixel in the map 
 3.	an indication of the geometry should be visible above the source code editor field 
 4.	run the entire script 
 5.	press the “_View time series_” bottom in the console
 
-![fig](/figures/figure_11.png)
-<sub>Figure 1. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization and highlighted steps necessary to create time series plots in GEE. </sub>
-
-For creating new time series for a specific pixel __FIRST__ delete the current geometry (Fig. 2) and then start with the procedure mentioned above.
+To create new time series for a specific pixel __FIRST__ delete the current geometry (Fig. 2) and then follow the instructions mentioned above.
 
 ![fig](/figures/figure_12.png)
 <sub>Figure 2. How to delete a created geometry in GEE. </sub>
@@ -116,8 +116,8 @@ For creating new time series for a specific pixel __FIRST__ delete the current g
 > *How do you explain the difference of backscatter level for natural forest and plantation?*
 >
 >#### Question E.3-5:
-> *Select some areas that show changes in the multitemporal RGB and plot their time series! Describe what you see and can you explain the sudden backscatter increase after changes?*
+> *Select 3 areas indicating changes in the multitemporal RGB and plot their time series! Describe what you see and can you explain the potential sudden backscatter increase after changes?*
 >
 >#### Extra question: 
-> *The analysis was done using C-band SAR images acquired by Sentinel-1 (5.3 cm wavelength). How would the separability of forest and non-forest change for a L-band SAR image (e.g. ALOS Palsar 2) considering its longer wavelength (23.6 cm wavelength). Do you expect the separability to be better or worse? Explain!*
+> *The analysis was done using C-band radar images acquired by Sentinel-1 (5.3 cm wavelength). How would the separability of forest and non-forest change for a L-band radar image (e.g. ALOS Palsar 2) considering its longer wavelength (23.6 cm wavelength). Do you expect the separability to be better or worse? Explain!*
 >___
