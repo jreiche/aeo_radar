@@ -1,4 +1,4 @@
-## 3.1	Sentinel-1 visualisation and RGB generation
+## E.1	Sentinel-1 visualisation and RGB generation
 
 #### Instruction: copy and paste the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the desired outcome.
 
