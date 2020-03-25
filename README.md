@@ -26,11 +26,11 @@ Johannes Reiche, Bart Slagter & Johannes Balling
  
 4. Google Earth Engine Exercises
    
-   E1. [Sentinel-1 visualisation and RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_1_Sentinel_1_Visualisation_and_RGB_generation.md)
+   E1. [Sentinel-1 visualisation and RGB generation](https://github.com/jreiche/aeo_radar/blob/master/E_1_Sentinel_1_Visualisation_and_RGB_generation.md)
    
-   E2. [Sentinel-1 multitemporal RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_2_Sentinel_1_multitemporal_RGB_generation.md)
+   E2. [Sentinel-1 multitemporal RGB generation](https://github.com/jreiche/aeo_radar/blob/master/E_2_Sentinel_1_multitemporal_RGB_generation.md)
    
-   E3. [Sentinel-1 time series analysis](https://github.com/jreiche/aeo_radar/blob/master/3_3_Sentinel_1_time_series_analysis.md)
+   E3. [Sentinel-1 time series analysis](https://github.com/jreiche/aeo_radar/blob/master/E_3_Sentinel_1_time_series_analysis.md)
 
 
 # 1. Introduction to Google Earth Engine
@@ -81,8 +81,8 @@ The study area extends approximately 80 x 60 km (0°24’ N; 102°40’ E) and i
 # 4. Google Earth Engine Exercises
 Please click on the different _.md_ files given in this github project and follow the instructions and tasks within them. It is important to carry out the different parts in the intended order of:
 
-E.1. [Sentinel-1 visualisation and RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_1_Sentinel_1_Visualisation_and_RGB_generation.md)
+E.1. [Sentinel-1 visualisation and RGB generation](https://github.com/jreiche/aeo_radar/blob/master/E_1_Sentinel_1_Visualisation_and_RGB_generation.md)
 
-E.2. [Sentinel-1 multitemporal RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_2_Sentinel_1_multitemporal_RGB_generation.md)
+E.2. [Sentinel-1 multitemporal RGB generation](https://github.com/jreiche/aeo_radar/blob/master/E_2_Sentinel_1_multitemporal_RGB_generation.md)
 
-E.3. [Sentinel-1 time series analysis](https://github.com/jreiche/aeo_radar/blob/master/3_3_Sentinel_1_time_series_analysis.md)
+E.3. [Sentinel-1 time series analysis](https://github.com/jreiche/aeo_radar/blob/master/E_3_Sentinel_1_time_series_analysis.md)
