@@ -80,9 +80,9 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 > 
 > Map.addLayer(???, {min: -30, max: -5, palette: ['black', 'white']}, 'Sentinel-1 VH image', true);
 > ```
-> #### *Question E.1-3: What differences do you see between the maps of the two polarizations?
+> #### *Question E.1-3: What differences do you see between the maps of the two polarizations?*
 > 
-> #### *Question E.1-4: Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)? 
+> #### *Question E.1-4: Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)?* 
 > ___
 
 Check the relationship of the five main land cover classes and the different Sentinel-1 polarizations backscatter values by selecting the “_Inspector_” on the top right in GEE (Fig. 3). Then select a pixel with the mouse courser by simply clicking on the map (Fig. 3).
@@ -96,9 +96,9 @@ Extract backscatter values for 10 pixels representing each of the five land cove
 <sub> Table 1. Structure of the backscatter values for VV- and VH-polarization for the five main land cover classes </sub>
 
 > ___
-> #### *Question E.1-5: What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B) for VV-polarization? Which class shows the lowest and highest backscatter values?
+> #### *Question E.1-5: What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B) for VV-polarization? Which class shows the lowest and highest backscatter values?*
 > 
-> #### *Question E.1-6:__ What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?
+> #### *Question E.1-6:__ What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?*
 > ___
 
 #### 4. Calculating “VV-VH backscatter ratio” and RGB composite creation
@@ -142,11 +142,11 @@ var visualisation_params = {
 Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', true)
 ```
 > ___
-> #### *Question E.1-7: What differences do you see in the VV-VH backscatter ratio band compared to the single VV and VH bands and which classes are visually good to separate?
+> #### *Question E.1-7: What differences do you see in the VV-VH backscatter ratio band compared to the single VV and VH bands and which classes are visually good to separate?*
 >
-> #### *Question E.1-8: Which colours represent the five main land cover classes in the RGB?
+> #### *Question E.1-8: Which colours represent the five main land cover classes in the RGB?*
 >
-> #### *Question E.1-9: Why does water (W) appear black in the RGB? What happens to the radar wave when interacting with a flat (non-rough) water surface? It is helpful to make a sketch including the side-looking radar.
+> #### *Question E.1-9: Why does water (W) appear black in the RGB? What happens to the radar wave when interacting with a flat (non-rough) water surface? It is helpful to make a sketch including the side-looking radar.*
 >
-> #### *Question E.1-10: Why are plantations much greener in the RGB than regular forest?
+> #### *Question E.1-10: Why are plantations much greener in the RGB than regular forest?*
 > ___
