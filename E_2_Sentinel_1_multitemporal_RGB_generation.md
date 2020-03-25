@@ -92,7 +92,7 @@ Map.addLayer(s1VV_multitemporal, visualisation_params, 'Sentinel-1 multitemporal
 ```
 
 The multitemporal RGB shows various changes throughout the aoi (Fig 3.). 
-To check the visual parameters (what band is the red channel, etc) one may adjust and check them directly in the map layout of GEE (Top right of Fig 3.).
+To check the visual parameters (what band is the red channel, etc) inspect and adjust them directly in the map layout of GEE (Top right of Fig 3.).
 
 ![fig](/figures/figure_10.png)
 <sub>Figure 3. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization. </sub>
