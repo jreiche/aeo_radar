@@ -12,7 +12,7 @@ var aoi = ee.Geometry.Polygon(
           [103.2639683751258, 0.16918388171760845],
           [103.2639683751258, 0.8283349585410177]]], null, false);
 
-// Zoom to this area of of interest
+// Zoom to area of of interest
 Map.centerObject(aoi,10);
 ```
 #### 2. Access Sentinel-1 image collection
