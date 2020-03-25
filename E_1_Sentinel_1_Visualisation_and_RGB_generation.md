@@ -39,10 +39,10 @@ To get a better understanding of GEE and its data structure look at the [ImageCo
 ![fig](/figures/figure_04.png)
 <sub>Figure 1. Sentinel-1 ImageCollection in the console of GEE. </sub>
 
- 
- #####   *Question E1-1: How many Sentinel-1 images does the selected image collection contain?*
- #####   *Question E1-2: How many Images of this collection were acquired in March 2020?*
-####
+___
+< #####   *Question E1-1: How many Sentinel-1 images does the selected image collection contain?*
+< #####   *Question E1-2: How many Images of this collection were acquired in March 2020?*
+___
 
 #### 3. Visualise Sentinel-1 backscatter images
 The visualisation of satellite data is only possible for objects of the class [Image](https://developers.google.com/earth-engine/image_overview). The first image of the _ImageCollection_ is selected. 
