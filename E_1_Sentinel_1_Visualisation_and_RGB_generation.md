@@ -16,7 +16,7 @@ var aoi = ee.Geometry.Polygon(
 Map.centerObject(aoi,10);
 ```
 #### 2. Access Sentinel-1 image collection
-In order to access the Sentinel-1 data in GEE you need to search the GEE catalogue of provided data and filter based on the desired aoi and date. Therefore you need to define a start and end date and several sensor metadata properties (eg: Instrument mode, orbit pass, etc.). Hereby various [sensor specifc parameters](https://developers.google.com/earth-engine/sentinel1) are possible to select.
+For accessing the Sentinel-1 data in GEE search the GEE catalogue of provided data and filter based on the desired aoi and date. Define start and end date and various sensor metadata properties (eg: Instrument mode, orbit pass, etc.). Check the different [sensor specifc parameters](https://developers.google.com/earth-engine/sentinel1).
 
 ```java
 // Define a start and end date for the analysis
@@ -34,7 +34,7 @@ var s1_collection = ee.ImageCollection('COPERNICUS/S1_GRD')
 print('Entire collection of Sentinel-1 images: ', s1_collection);
 ```
 
-To get a better understanding of GEE and its data structure look at the [ImageCollection](https://developers.google.com/earth-engine/ic_creating) “_Entire collection of Sentinel-1 images_”. This _ImageCollection_ should be printed in the console on the top right after running the script (Fig. 1).
+Look at the [ImageCollection](https://developers.google.com/earth-engine/ic_creating) “_Entire collection of Sentinel-1 images_” for a better understanding of GEE's data structure. “_Entire collection of Sentinel-1 images_” is printed in the console on the top right after running the script (Fig. 1).
 
 ![fig](/figures/figure_04.png)
 <sub>Figure 1. Sentinel-1 ImageCollection in the console of GEE. </sub>
@@ -43,7 +43,7 @@ ___
 > ####  Question E1-1: 
 > *How many Sentinel-1 images does the selected image collection contain?*
 > ####  Question E1-2: 
-> *How many Images of this collection were acquired in March 2020?*
+> *How many images of this collection were acquired in March 2020?*
 ___
 
 #### 3. Visualise Sentinel-1 backscatter images
@@ -58,7 +58,7 @@ print('First Sentinel-1 image from collection: ', s1_image);
 ```
 Take a look at the single image. The metadata of the image is printed as "_First Sentinel-1 image from collection_" in the console.
 
-To visualize the VV-polarised backscatter image, we first subset to the VV-backscatter band of this Sentinel-1 image. A number of visualisation [parameters](https://developers.google.com/earth-engine/image_visualization) are selected.
+To visualize the VV-polarised backscatter image, first subset to the VV-backscatter band of this Sentinel-1 image and then set a number of visualisation [parameters](https://developers.google.com/earth-engine/image_visualization).
 
 ```java
 var s1VV_image = s1_image.select('VV');
@@ -66,7 +66,7 @@ var s1VV_image = s1_image.select('VV');
 Map.addLayer(s1VV_image, {min: -25, max: 0, palette: ['black', 'white']}, 'Sentinel-1 VV image', true);
 ```
 
-Examine the plotted Sentinel-1 VV image (Fig. 2). To get a better idea of the study area, you may also deselect the visualized layer (purple box in Fig. 2) and change the basemap to optical satellite imagery – “_Satellite_” (orange box in Fig. 2). 
+Examine the plotted Sentinel-1 VV image (Fig. 2). Potentially deselect the visualized layer (purple box in Fig. 2) and change the basemap to optical satellite imagery – “_Satellite_” (orange box in Fig. 2) to get a better idea of the study area. 
 
 The five main classes present in the study area are: __forest (F)__, __non-forest (NF)__, __plantation (P)__, __built-up (B)__ and __water (W)__. Here non-forest is predominantly open soil (logging roads or logged forest/plantation). 
 
@@ -75,7 +75,7 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 
 > ___
 > #### Task
-> Select the VH backscatter band of “s1_image” and visualize it.
+> Select the VH backscatter iamge of “*s1_image*” and visualize it.
 >
 > ```java
 > var s1VH_image = ??? ;
@@ -90,31 +90,31 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 > *Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)?* 
 > ___
 
-Check the relationship of the five main land cover classes and the different Sentinel-1 polarizations backscatter values by selecting the “_Inspector_” on the top right in GEE (Fig. 3). Then select a pixel with the mouse courser by simply clicking on the map (Fig. 3).
+Check the relationship of the five main land cover classes and the different Sentinel-1 polarizations backscatter values by selecting the “_Inspector_” on the top right in GEE (Fig. 3). Then select a pixel with the mouse courser by clicking on the map (Fig. 3).
 
 ![fig](/figures/figure_06.png)
 <sub>Figure 3. Inspector function to access values of plotted maps in GEE. </sub>
 
-Extract backscatter values for 10 pixels representing each of the five land cover classes via the GEE “_Inspector_” to describe class specific backscatter characteristics. Afterwards calculate the minimal value, the maximal value, the median and the standard deviation based on the 10 pixel for each class and fill it in a table (Example table 1.).
+Extract backscatter values for a number of pixels (eg. 5 - 10) representing each of the five land cover classes via the GEE “_Inspector_”. Afterwards calculate the mean value for each class based on the selected pixel values and fill it in a table (Example table 1.).
 
 ![fig](/figures/table_01.PNG)
 <sub> Table 1. Structure of the backscatter values for VV- and VH-polarization for the five main land cover classes </sub>
 
 > ___
 > #### Question E.1-5: 
-> *What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B) for VV-polarization? Which class shows the lowest and highest backscatter values?*
+> *What are differences in the calculated mean values for each class (F, NF, P, W and B) in VV-polarization?*
 > 
 > #### Question E.1-6: 
-> *What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?*
+> *What land cover classes indicate significant differences in their mean values for VV- and VH-polarization?*
 > ___
 
 #### 4. Calculating “VV-VH backscatter ratio” and RGB composite creation
 
-To create a false colour RGB using a dual-polarised SAR image (two image layers only), the backscatter ratio is most commonly used as third image layer. In case of Sentinel-1, the “VV/VH backscatter ratio” is calculated.
+To create a false colour RGB using a dual-polarised radar image (two image layers only), the backscatter ratio is most commonly used as third image layer. In case of Sentinel-1, the “VV/VH backscatter ratio” is calculated.
 In dB scale, the “VV-VH backscatter ratio” is not calculated as a classical ratio (for example NDVI), but simply as VV backscatter - VH backscatter. (In linear scale, the “VVVH backscatter ratio” it is calculated as ratio: VV/VH).
 
 To calculate the “VVVH backscatter ratio” and visualize it (Fig. 4) you may use the following code. 
-__Note__ that in order to successfully run this code you need to have defined the variable called _s1VH_image_ via the task from visualizing the VH band from before!
+__Note__: In order to successfully run this code a variable called _s1VH_image_ (from visualizing the VH backscatter image) needs to be already defined!
 
 ```java
 // Calculate the  VVVH backscatter ratio by subtracting the single bands of VV and VH
@@ -128,7 +128,7 @@ Map.addLayer(s1VVVH_image, {min: 0, max: 10, palette: ['black', 'white']}, 'Sent
 
 #### 5. Plot the Sentinel-1 radar RGB
 
-For plotting a radar RGB in GEE we first need to add the newly calculated backscatter ratio to the initial Sentinel-1 image containing the VV- and VH-bands. Out of convenience we also clip the image to the desired aoi.
+For plotting a radar RGB in GEE first add the newly calculated backscatter ratio to the initial Sentinel-1 image containing the VV- and VH-bands. Afterwards clip the image to the desired aoi.
 
 ```java
 // Add the backscatter ratio to the initial Sentinel-1 image
@@ -150,7 +150,7 @@ Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', true)
 ```
 > ___
 > #### Question E.1-7: 
-> *What differences do you see in the VV-VH backscatter ratio band compared to the single VV and VH bands and which classes are visually good to separate?*
+> *What differences do you see in the VV-VH backscatter ratio image compared to the single VV and VH backscatter images?*
 >
 > #### Question E.1-8: 
 > *Which colours represent the five main land cover classes in the RGB?*
