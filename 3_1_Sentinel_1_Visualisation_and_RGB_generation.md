@@ -41,15 +41,13 @@ To get a better understanding of GEE and its data structure look at the [ImageCo
 
 > ___
 > ### Question
-> __Question 3.1a:__ What is an ImageCollection and what does it contain? 
+>  __Question E1.a:__ How many Sentinel-1 images does the selected image collection contain?
 > 
-> __Question 3.1b:__ How many Images are in _Entire collection of Sentinel-1 images_?
-> 
-> __Question 3.1c:__ How many Images of this collection were acquired in March 2020?
+> __Question E1.b:__ How many Images of this collection were acquired in March 2020?
 > ___
 
-3. Visualise Sentinel-1 backscatter images
-The visualisation of satellite data is only possible for objects of the class [Image](https://developers.google.com/earth-engine/image_overview) in GEE. Therefore we select the first Image of the _ImageCollection_. 
+#### 3. Visualise Sentinel-1 backscatter images
+The visualisation of satellite data is only possible for objects of the class [Image](https://developers.google.com/earth-engine/image_overview). The first image of the _ImageCollection_ is selected. 
 
 ```java
 // Obtain the first image from the Sentinel-1 collection (acquired at February 1st, 2020)
@@ -58,9 +56,9 @@ var s1_image = s1_collection.first();
 // Print this image to the console
 print('First Sentinel-1 image from collection: ', s1_image);
 ```
-Take a look at the single Image. The metadata of the image is printed as "_First Sentinel-1 image from collection_" in the console.
+Take a look at the single image. The metadata of the image is printed as "_First Sentinel-1 image from collection_" in the console.
 
-To visualize a VV-polarized Sentinel-1 image as a grayscale, we first subset to the VV-band of this Sentinel-1 image. After that we visualize the band based on various [parameters](https://developers.google.com/earth-engine/image_visualization).
+To visualize the VV-polarised backscatter image, we first subset to the VV-backscatter band of this Sentinel-1 image. A number of visualisation [parameters](https://developers.google.com/earth-engine/image_visualization) are selected.
 
 ```java
 var s1VV_image = s1_image.select('VV');
@@ -68,7 +66,7 @@ var s1VV_image = s1_image.select('VV');
 Map.addLayer(s1VV_image, {min: -25, max: 0, palette: ['black', 'white']}, 'Sentinel-1 VV image', true);
 ```
 
-Examine the printed Sentinel-1 VV image (Fig. 2). To get a better idea of the study area, you may also deselect the visualized layer (purple box in Fig. 2) and change the basemap to optical satellite imagery – “_Satellite_” (orange box in Fig. 2). 
+Examine the plotted Sentinel-1 VV image (Fig. 2). To get a better idea of the study area, you may also deselect the visualized layer (purple box in Fig. 2) and change the basemap to optical satellite imagery – “_Satellite_” (orange box in Fig. 2). 
 
 The five main classes present in the study area are: __forest (F)__, __non-forest (NF)__, __plantation (P)__, __built-up (B)__ and __water (W)__. Here non-forest is predominantly open soil (logging roads or logged forest/plantation). 
 
@@ -77,8 +75,7 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 
 > ___
 > ### Task
-> Now try to select the VH band of “s1_image” yourself and visualize it.
-> (Hint: Do it similar to the VV-polarization and fill out spaces of __???__ in the code below)
+> Select the VH backscatter band of “s1_image” and visualize it.
 >
 > ```java
 > var s1VH_image = ??? ;
@@ -103,15 +100,15 @@ Extract backscatter values for 10 pixels representing each of the five land cove
 > ___
 > ### Question
 > 
-> __Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B) for VV-polarization? Which class shows the lowest and highest values?
+> __Question 3.1f:__ What are significant differences in the calculated median and standard deviation values for each class (F, NF, P, W and B) for VV-polarization? Which class shows the lowest and highest backscatter values?
 > 
 > __Question 3.1g:__ What land cover classes are easy to separate based on their backscatter value ranges for either VV- and VH-polarization?
 > ___
 
-## Calculating “VVVH backscatter ratio” and RGB composite creation
+#### 4. Calculating “VV-VH backscatter ratio” and RGB composite creation
 
-To create a false colour RGB using a dual-polarised SAR image (two image layers only), the backscatter ratio is most commonly used as third image layer. In case of Sentinel-1, the “VVVH backscatter ratio” is calculated.
-In dB scale, the “VVVH backscatter ratio” is not calculated as a classical ratio (for example NDVI), but simply as VV backscatter - VH backscatter. (In linear scale, the “VVVH backscatter ratio” it is calculated as ratio: VV/VH).
+To create a false colour RGB using a dual-polarised SAR image (two image layers only), the backscatter ratio is most commonly used as third image layer. In case of Sentinel-1, the “VV/VH backscatter ratio” is calculated.
+In dB scale, the “VV-VH backscatter ratio” is not calculated as a classical ratio (for example NDVI), but simply as VV backscatter - VH backscatter. (In linear scale, the “VVVH backscatter ratio” it is calculated as ratio: VV/VH).
 
 To calculate the “VVVH backscatter ratio” and visualize it (Fig. 4) you may use the following code. 
 __Note__ that in order to successfully run this code you need to have defined the variable called _s1VH_image_ via the task from visualizing the VH band from before!
@@ -125,6 +122,8 @@ Map.addLayer(s1VVVH_image, {min: 0, max: 10, palette: ['black', 'white']}, 'Sent
 
 ![fig](/figures/figure_07.png)
 <sub> Figure 4. VVVH backscatter ratio as grayscale for one Sentinel-1 image </sub>
+
+#### 5. Plot the Sentinel-1 radar RGB
 
 For plotting a radar RGB in GEE we first need to add the newly calculated backscatter ratio to the initial Sentinel-1 image containing the VV- and VH-bands. Out of convenience we also clip the image to the desired aoi.
 
@@ -148,7 +147,7 @@ Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', true)
 ```
 > ___
 > ### Question
-> __Question 3.1h:__ What differences do you see in the ratio band compared to the single VV and VH bands and which classes are visually good to separate?
+> __Question 3.1h:__ What differences do you see in the VV-VH backscatter ratio band compared to the single VV and VH bands and which classes are visually good to separate?
 >
 > __Question 3.1i:__ Which colours represent the five main land cover classes in the RGB?
 >
