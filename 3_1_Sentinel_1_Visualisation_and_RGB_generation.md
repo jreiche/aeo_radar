@@ -15,7 +15,7 @@ var aoi = ee.Geometry.Polygon(
 // Zoom to this area of of interest
 Map.centerObject(aoi,10);
 ```
-#### 2. Access Sentinel-1 images
+#### 2. Access Sentinel-1 image collection
 In order to access the Sentinel-1 data in GEE you need to search the GEE catalogue of provided data and filter based on the desired aoi and date. Therefore you need to define a start and end date and several sensor metadata properties (eg: Instrument mode, orbit pass, etc.). Hereby various [sensor specifc parameters](https://developers.google.com/earth-engine/sentinel1) are possible to select.
 
 ```java
