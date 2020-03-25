@@ -35,7 +35,7 @@ Johannes Reiche, Bart Slagter & Johannes Balling
 
 # 1. Introduction to Google Earth Engine
 Google Earth Engine (GEE) provides vast amounts of satellite imagery and geospatial datasets ready to use for researcher, scientists and developers [(Goerlick et al., 2017)](https://www.sciencedirect.com/science/article/pii/S0034425717302900). Satellite images include ESA’s Sentinel missions providing both dense optical [(Sentinel-2)](https://developers.google.com/earth-engine/datasets/catalog/sentinel-2) and radar [(Sentinel-1)](https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD) data streams. These data streams can be directly processed on Googles servers making it a fast and convenient tool to analyse remote sensing data.
-For a brief introduction to capabilities of GEE you may watch the videos of this [playlist.](https://www.youtube.com/playlist?list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs). Nessecary videos of this playlist are:
+For a brief introduction on how to use GEE you may watch the videos of this [playlist.](https://www.youtube.com/playlist?list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs). Suggested videos in particular helpful to accomplish this exercise are:
 * [General introduction of GEE](https://www.youtube.com/watch?v=W2V_awzKDOg&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=2&t=0s)
 * [Difference between a server and a client.](https://www.youtube.com/watch?v=Tas0c4e_E0M&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=3&t=0s) It is important to notice that GEE is as server based platform and certain operations that you are used to carry out in R or other programming software are either not working or not advisable.
 * [General functions on filtering and displaying data in GEE.](https://www.youtube.com/watch?v=4w6Mt6HTC2I&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=4&t=0s)
@@ -43,12 +43,12 @@ For a brief introduction to capabilities of GEE you may watch the videos of this
 Note that the rest of the videos are not mandatory for this practical, but give a more in depth view on possibilities in GEE.
 
 ### Creating and accessing your GEE account
-To start working in GEE you first need to sign up, if you have not done so beforehand. Please visit the following [website](https://earthengine.google.com/) and click on the sign-up button on the top of the page (Fig. 3). After filling in all required information, the confirmation for your GEE account might take up to three days according to the website (usually its done in a matter of hours).
+To start working in GEE you first need to sign up (if you have not done so beforehand). Please visit the following [website](https://earthengine.google.com/) and click on the sign-up button on the top of the page (Fig. 3). After filling in all required information, the confirmation of your GEE account might take up to three days according to the website (usually its done in a matter of hours).
 
 ![fig](/figures/figure_03.png)
 <sub>Figure 3. GEE website - for using GEE, please sign-up on the top right (red box). </sub>
 
-After that you are ready to login and analyse satellite data via the [GEE code editor](https://code.earthengine.google.com/) (Please watch the videos mentioned above to understand the structure of the GEE code editor). 
+With an account you can login via the [GEE code editor](https://code.earthengine.google.com/) (Please watch the videos mentioned above to understand the structure of the GEE code editor). 
 
 
 # 2. Sentinel-1 SAR data
