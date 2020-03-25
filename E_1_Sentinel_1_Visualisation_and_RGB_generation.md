@@ -97,8 +97,19 @@ Check the relationship of the five main land cover classes and the different Sen
 
 Extract backscatter values for a number of pixels (eg. 5 - 10) representing each of the five land cover classes via the GEE “_Inspector_”. Afterwards calculate the mean value for each class based on the selected pixel values and fill it in a table (Example table 1.).
 
-![fig](/figures/table_01.PNG)
 <sub> Table 1. Structure of the backscatter values for VV- and VH-polarization for the five main land cover classes </sub>
+
+Land cover class        | ####Forest      |       | #### Non-forest       | 
+Polarization            | VV              |VH     |       VV              | VH  
+-----------------|-------------|----------|-------|-----------------------|
+Pixel 1 |               |                 |       |                       |
+...     |               |                 |       |                       |
+Pixel 5 |               |                 |       |                       |
+####Mean|               |                 |       |                       |
+
+
+![fig](/figures/table_01.PNG)
+
 
 > ___
 > #### Question E.1-5: 
