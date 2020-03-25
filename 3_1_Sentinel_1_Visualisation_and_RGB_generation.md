@@ -2,7 +2,7 @@
 
 #### Instruction: copy and paste the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the desired outcome.
 
-#### 1. Select your Area of Interest (aoi) and zoom to it.
+#### 1. Select your Area of Interest
 
 ```java
 // Define a rectangular area of interest, by listing coordinates
