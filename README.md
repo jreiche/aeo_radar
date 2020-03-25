@@ -26,7 +26,7 @@ Johannes Reiche, Bart Slagter & Johannes Balling
  
 4. Google Earth Engine Exercises
    
-  E1. [Sentinel-1 visualisation and RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_1_Sentinel_1_Visualisation_and_RGB_generation.md)
+   E1. [Sentinel-1 visualisation and RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_1_Sentinel_1_Visualisation_and_RGB_generation.md)
    
    E2. [Sentinel-1 multitemporal RGB generation](https://github.com/jreiche/aeo_radar/blob/master/3_2_Sentinel_1_multitemporal_RGB_generation.md)
    
@@ -40,15 +40,15 @@ For a brief introduction on how to use GEE you may watch the videos of this [pla
 * [Difference between a server and a client.](https://www.youtube.com/watch?v=Tas0c4e_E0M&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=3&t=0s) It is important to notice that GEE is as server based platform and certain operations that you are used to carry out in R or other programming software are either not working or not advisable.
 * [General functions on filtering and displaying data in GEE.](https://www.youtube.com/watch?v=4w6Mt6HTC2I&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=4&t=0s)
 
-Note that the rest of the videos are not mandatory for this practical, but give a more in depth view on possibilities in GEE.
+The rest of the videos are not mandatory for this practical, but give a more in depth view on possibilities in GEE.
 
 ### Creating and accessing your GEE account
-To start working in GEE you first need to sign up (if you have not done so beforehand). Please visit the following [website](https://earthengine.google.com/) and click on the sign-up button on the top of the page (Fig. 3). After filling in all required information, the confirmation of your GEE account might take up to three days according to the website (usually its done in a matter of hours).
+To start working in GEE the user needs to sign up (if not done beforehand). Please visit the following [website](https://earthengine.google.com/) and click on the sign-up button on the top of the page (Fig. 3). The confirmation of a GEE account might take up to three days according to the website (usually it is faster).
 
 ![fig](/figures/figure_03.png)
 <sub>Figure 3. GEE website - for using GEE, please sign-up on the top right (red box). </sub>
 
-With an account you can login via the [GEE code editor](https://code.earthengine.google.com/) (Please watch the videos mentioned above to understand the structure of the GEE code editor). 
+With an account you can login via the [GEE code editor](https://code.earthengine.google.com/) and start coding (Watch the videos mentioned above to understand the structure of the GEE code editor). 
 
 
 # 2. Sentinel-1 SAR data
