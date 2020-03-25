@@ -95,7 +95,7 @@ print(button)
 2.	create a point by clicking on the desired pixel in the map 
 3.	an indication of the geometry should be visible above the source code editor field 
 4.	run the entire script 
-5.	press the “_View time series_” bottom in the console
+5.	press “_View time series_” button in the console
 
 To create new time series for a specific pixel __FIRST__ delete the current geometry (Fig. 2) and then follow the instructions mentioned above.
 
