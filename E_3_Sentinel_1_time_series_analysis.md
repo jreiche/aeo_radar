@@ -1,4 +1,4 @@
-# 3.3 Sentinel-1 time series analysis in GEE
+# E.3 Sentinel-1 time series analysis in GEE
 ### For the entire practical: copy and paste all parts of the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the disered outcome.
 
 This part of the practical shows how to create Sentinel-1 time series plots.
