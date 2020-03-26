@@ -79,7 +79,7 @@ Clip the multiband image to the desired aoi and visualize the RGB.
 // Clip the newly created image to the area of interest
 var s1VV_multitemporal = s1VV_multitemporal.clip(aoi)
 
-// Add median composite to the map as an RGB image, using the three bands VV, VH and VV/VH
+// Add median composite to the map as an RGB image, using the three bands "VV_2018Q1","VV_2019Q1","VV_2020Q1"
 var visualisation_params = {
         "opacity": 1,
         "bands": ["VV_2018Q1","VV_2019Q1","VV_2020Q1"],
