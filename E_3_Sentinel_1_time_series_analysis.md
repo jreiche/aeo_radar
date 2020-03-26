@@ -1,5 +1,5 @@
 ## E.3 Sentinel-1 time series analysis in GEE
-#### Instruction: copy and paste the code below into the console of GEE. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the desired outcome.
+#### Instruction: copy and paste the code below into the GEE console. It is advisable to insert the code snippets step by step and follow the given structure of the practical in order to successfully produce the desired outcome.
 
 This exercise shows how to create Sentinel-1 time series plots.
 
