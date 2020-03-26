@@ -43,7 +43,7 @@ For a brief introduction on how to use GEE you may watch the videos of this [pla
 The rest of the videos are not mandatory for this practical, but give a more in depth view on possibilities in GEE.
 
 ### Creating and accessing your GEE account
-To start working in GEE the user needs to sign up (if not done beforehand). Please visit the following [website](https://earthengine.google.com/) and click on the sign-up button on the top of the page (Fig. 3). The confirmation of a GEE account might take up to three days according to the website (usually it is faster).
+To start using GEE the user needs to sign up for an GEE account (if not done beforehand). Visit the following [website](https://earthengine.google.com/) and click on the sign-up button on the top of the page (Fig. 3). The confirmation of a GEE account might take up to three days according to the website (usually it is faster).
 
 ![fig](/figures/figure_03.png)
 <sub>Figure 3. GEE website - for using GEE, please sign-up on the top right (red box). </sub>
