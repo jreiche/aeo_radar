@@ -14,7 +14,7 @@ Johannes Reiche, Bart Slagter & Johannes Balling
 * Introduction to GEE
 * Visualisation and RGB generation of Sentinel-1 images in GEE
 * Basic time series analysis of Sentinel-1 images in GEE
-* Understanding SAR backscatter characteristics over forest land cover
+* Understanding SAR backscatter characteristics over forest landscapes
 
 ### Content
 
