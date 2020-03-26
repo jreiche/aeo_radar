@@ -1,5 +1,5 @@
-# Advanced Earth Observation - Radar Exercise
-### "Introduction to radar remote sensing for forest monitoring in GEE"
+# Advanced Earth Observation - GEE Radar Exercise
+### "Introduction to radar remote sensing for forest monitoring in Google Earth Engine"
 
 Johannes Reiche, Bart Slagter & Johannes Balling
 23-03-2020
