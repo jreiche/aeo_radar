@@ -112,7 +112,7 @@ Pixel 5                 |                 |       |                       |     
 > *What are differences in the calculated mean values for each class (F, NF, P, W and B) in VV-polarization?*
 > 
 > #### Question E.1-6: 
-> *What land cover classes indicate significant differences in their mean values for VV- and VH-polarization?*
+> *Which land cover classes indicate significant differences in their mean values for VV- and VH-polarization?*
 > ___
 
 #### 4. Calculating “VV-VH backscatter ratio” and RGB composite creation
