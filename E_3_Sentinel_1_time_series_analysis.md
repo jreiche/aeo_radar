@@ -116,8 +116,8 @@ To create new time series for a specific pixel __FIRST__ delete the current geom
 > *How do you explain the difference of backscatter level for natural forest and plantation?*
 >
 >#### Question E.3-5:
-> *Select 3 areas indicating changes in the multitemporal RGB and plot their time series! Describe what you see and can you explain the potential sudden backscatter increase after changes?*
+> *Select 3 areas indicating changes in the multitemporal RGB and plot their time series! Describe what you see and can you explain the potential sudden backscatter increase or decrease after changes?*
 >
 >#### Extra question: 
-> *The analysis was done using C-band radar images acquired by Sentinel-1 (5.3 cm wavelength). How would the separability of forest and non-forest change for a L-band radar image (e.g. ALOS Palsar 2) considering its longer wavelength (23.6 cm wavelength). Do you expect the separability to be better or worse? Explain!*
+> *The analysis was done using C-band radar images acquired by Sentinel-1 (5.3 cm wavelength). How would the separability of forest and non-forest change for an L-band radar image (e.g. ALOS Palsar 2) be, considering its longer wavelength (23.6 cm wavelength)? Do you expect the separability to be better or worse? Explain!*
 >___
