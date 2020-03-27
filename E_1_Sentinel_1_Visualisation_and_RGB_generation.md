@@ -109,10 +109,7 @@ Pixel 5                 |                 |       |                       |     
 
 > ___
 > #### Question E.1-5: 
-> *What are differences in the calculated mean values for each class (F, NF, P, W and B) in VV-polarization?*
-> 
-> #### Question E.1-6: 
-> *Which land cover classes indicate significant differences in their mean values for VV- and VH-polarization?*
+> *What are calculated mean values for each class (F, NF, P, W and B) in VV- and VH-polarization?*
 > ___
 
 #### 4. Calculating “VV-VH backscatter ratio” and RGB composite creation
@@ -156,15 +153,15 @@ var visualisation_params = {
 Map.addLayer(s1_image_clip, visualisation_params, 'Sentinel-1 RGB', true)
 ```
 > ___
-> #### Question E.1-7: 
+> #### Question E.1-6: 
 > *What differences do you see in the VV-VH backscatter ratio image compared to the single VV and VH backscatter images?*
 >
-> #### Question E.1-8: 
+> #### Question E.1-7: 
 > *Which colours represent the five main land cover classes in the RGB?*
 >
-> #### Question E.1-9: 
+> #### Question E.1-8: 
 > *Why does water (W) appear black in the RGB? What happens to the radar wave when interacting with a flat (non-rough) water surface? It is helpful to make a sketch including the side-looking radar.*
 >
-> #### Question E.1-10: 
+> #### Question E.1-9: 
 > *Why are plantations much greener in the RGB than regular forest?*
 > ___
