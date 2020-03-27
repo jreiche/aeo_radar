@@ -38,8 +38,8 @@ Check the entire ImageCollection via the output in the console (Fig. 1).
 
 
 ### 2. Median calculation for an image collection
-This collection contains 192 single images and needs to reduced in order to create a meaningful multitemporal RGB. 
-First calculate medians for each pixel and each band in the Sentinel-1 ImageCollection for the first quantiles of the years 2018, 2019 and 2020.
+This collection contains 192 single images and needs to be reduced in order to create a meaningful multitemporal RGB. 
+First calculate medians for each pixel and each band in the Sentinel-1 ImageCollection for the first quarters of the years 2018, 2019 and 2020.
 
 ```java
 // Split the Sentinel-1 collection into three quarterly median composites, to allow creating a multitemporal RGB composite
@@ -65,10 +65,10 @@ var s1VV_multitemporal = s1VV_median_2018Q1.addBands(s1VV_median_2019Q1.addBands
 // Print the multitemporal image to the console
 print('Multitemporal Sentinel-1 VV image: ', s1VV_multitemporal)
 ```
-Look at the printed result of the multiband image containing the first quantile median composites of 2018, 2019 and 2020 (Fig. 2).
+Look at the printed result of the multiband image containing the first quarter median composites of 2018, 2019 and 2020 (Fig. 2).
 
 ![fig](/figures/figure_09.png)
-<sub>Figure 2. Multiband image of the first quantile median composites of 2018, 2019 and 2020. </sub>
+<sub>Figure 2. Multiband image of the first quarter median composites of 2018, 2019 and 2020. </sub>
 
 
 ### 4. Visualization of a multitemporal RGB
@@ -95,7 +95,7 @@ The multitemporal RGB shows various changes throughout the aoi (Fig 3.).
 To check the visual parameters (what band is the red channel, etc) inspect and adjust them directly in the map layout of GEE (Top right of Fig 3.).
 
 ![fig](/figures/figure_10.png)
-<sub>Figure 3. RGB of the first quantile median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization. </sub>
+<sub>Figure 3. RGB of the first quarter median composites of 2018, 2019 and 2020 for Sentinel-1 VV polarization. </sub>
 
 
 > ___
