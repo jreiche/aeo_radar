@@ -101,7 +101,7 @@ Extract backscatter values for a number of pixels (eg. 5 - 10) representing each
 
 __Land cover class__        | __Forest__          |       |     __Non-forest__        |       | __Plantation__      |    | __Built-up__|    |__Water__|    |
 ------------------------|-----------------|-------|-----------------------|-------|-----------------|----|---------|----|-----|----|
-Polarization            | *VV*            |*VH*   |       *VV*            | *VH*  |*VH*             |*VH*|*VH*     |*VH*|*VH* |*VH*|
+Polarization            | *VV*            |*VH*   |       *VV*            | *VH*  |*VV*             |*VH*|*VV*     |*VH*|*VV* |*VH*|
 Pixel 1                 |                 |       |                       |       |                 |    |         |    |     |    |
 ...                     |                 |       |                       |       |                 |    |         |    |     |    |
 Pixel 5                 |                 |       |                       |       |                 |    |         |    |     |    |
