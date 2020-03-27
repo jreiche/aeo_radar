@@ -75,7 +75,7 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 
 > ___
 > #### Task
-> Select the VH backscatter iamge of “*s1_image*” and visualize it.
+> Select the VH backscatter image of “*s1_image*” and visualize it.
 >
 > ```java
 > var s1VH_image = ??? ;
@@ -84,13 +84,13 @@ The five main classes present in the study area are: __forest (F)__, __non-fores
 > ```
 >
 > #### Question E.1-3: 
-> *What differences do you see between the maps of the two polarizations?*
+> *What differences do you see between the images of the two polarizations?*
 > 
 > #### Question E.1-4: 
 > *Which polarization is the most suitable to visually separate forest (F) and non-forest (NF)?* 
 > ___
 
-Check the relationship of the five main land cover classes and the different Sentinel-1 polarizations backscatter values by selecting the “_Inspector_” on the top right in GEE (Fig. 3). Then select a pixel with the mouse courser by clicking on the map (Fig. 3).
+Check the relationship of the five main land cover classes and the different Sentinel-1 polarizations backscatter values by selecting the “_Inspector_” on the top right in GEE (Fig. 3). Then select a pixel with the mouse cursor by clicking on the map (Fig. 3).
 
 ![fig](/figures/figure_06.png)
 <sub>Figure 3. Inspector function to access values of plotted maps in GEE. </sub>
@@ -117,8 +117,8 @@ Pixel 5                 |                 |       |                       |     
 
 #### 4. Calculating “VV-VH backscatter ratio” and RGB composite creation
 
-To create a false colour RGB using a dual-polarised radar image (two image layers only), the backscatter ratio is most commonly used as third image layer. In case of Sentinel-1, the “VV/VH backscatter ratio” is calculated.
-In dB scale, the “VV-VH backscatter ratio” is not calculated as a classical ratio (for example NDVI), but simply as VV backscatter - VH backscatter. (In linear scale, the “VVVH backscatter ratio” it is calculated as ratio: VV/VH).
+To create a false color RGB using a dual-polarized radar image (two image layers only), the backscatter ratio is most commonly used as third image layer. In case of Sentinel-1, the “VV/VH backscatter ratio” is calculated.
+In dB scale, the “VV-VH backscatter ratio” is not calculated as a classical ratio (for example NDVI), but simply as *VV backscatter - VH backscatter*. (In linear scale, the “VVVH backscatter ratio” it is calculated as ratio: VV/VH).
 
 To calculate the “VVVH backscatter ratio” and visualize it (Fig. 4) you may use the following code. 
 __Note__: In order to successfully run this code a variable called _s1VH_image_ (from visualizing the VH backscatter image) needs to be already defined!
