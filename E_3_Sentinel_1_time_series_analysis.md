@@ -104,7 +104,7 @@ To create new time series for a specific pixel __FIRST__ delete the current geom
 
 >___
 >#### Question E.3-1: 
-> *Visualize time series for the main five classes (forest, non-forest, plantation, water and built-up) and explain possible differences in VV- and VH-polarizations!*
+> *Visualize time series for the main five classes (forest, non-forest, plantation, water and built-up) in VV- and VH-polarization!*
 >
 >#### Question E.3-2: 
 > *Which scatter mechanism(s) cause the high VH backscatter over forest (F) when compared to non-forest (NF) areas? Briefly explain the mechanism(s).*
