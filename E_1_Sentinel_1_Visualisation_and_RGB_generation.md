@@ -121,6 +121,7 @@ To create a false color RGB using a dual-polarized radar image (two image layers
 In dB scale, the “VV-VH backscatter ratio” is not calculated as a classical ratio (for example NDVI), but simply as *VV backscatter - VH backscatter*. (In linear scale, the “VVVH backscatter ratio” it is calculated as ratio: VV/VH).
 
 To calculate the “VVVH backscatter ratio” and visualize it (Fig. 4) you may use the following code. 
+
 __Note__: In order to successfully run this code a variable called _s1VH_image_ (from visualizing the VH backscatter image) needs to be already defined!
 
 ```java
