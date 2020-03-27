@@ -40,7 +40,7 @@ For a brief introduction on how to use GEE you may watch the videos of this [pla
 * [Difference between a server and a client.](https://www.youtube.com/watch?v=Tas0c4e_E0M&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=3&t=0s) It is important to notice that GEE is as server based platform and certain operations usually used in R or other programming software are either not working or not advisable.
 * [General functions on filtering and displaying data in GEE.](https://www.youtube.com/watch?v=4w6Mt6HTC2I&list=PLivRXhCUgrZpCR3iSByLYdd_VwFv-3mfs&index=4&t=0s)
 
-The rest of the videos are not mandatory for this practical, but give a more in depth view on possibilities in GEE.
+The rest of the videos are not mandatory for this practical, but give a more in-depth view on possibilities in GEE.
 
 ### Creating and accessing your GEE account
 To start using GEE the user needs to sign up for an GEE account (if not done beforehand). Visit the following [website](https://earthengine.google.com/) and click on the sign-up button on the top of the page (Fig. 3). The confirmation of a GEE account might take up to three days according to the website (usually it is faster).
